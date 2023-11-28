@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="20" size="20" placeholder="nome de usuário">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="12" size="12" placeholder="senha">
+        </p>
+        <p>
+            <label for="inumero">Média: </label>
+            <input type="number" name="telefone" id="inumero" placeholder="de 0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Informe o mês e o ano: </label>
+            <input type="month" name="mes" id="imes" value="2023-11">
+        </p>
+        <p>
+            <label for="nascimento">Data de Nascimento: </label>
+            <input type="date" name="nascimento" id="nascimento">
+        </p>
+        <p>
+            <label for="idatahora">Data e Hora da Ocorrência: </label>
+            <input type="datetime-local" name="datahora" id="idatahora">
+        </p>        
+        <p>
+            <label for="icorreio">Desejo receber e-mail: </label>
+            <input type="checkbox" name="correio" id="icorreio" checked>
+        </p>
+        <p>
+            <label for="icor">Cor preferida: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail" placeholder="seuemail@email.com">
+        </p>
+        <p>
+            <label for="iarquivo">Carregar Arquivo: </label>
+            <input type="file" name="arquivo" id="iarquivo" 
+            >
+        </p>
+        <p>
+            <label for="iimagem">Imagem: </label>
+            <input type="image" src="base.jpg" name="imagem" id="iimagem">
+        </p>
+        <p>
+            <div>Região</div>
+            <label for="iregiao">Norte: </label>
+            <input type="radio" name="regiao" id="iregiao" checked>
+            <label for="iregiao">Nordeste: </label>
+            <input type="radio" name="regiao" id="iregiao">
+            <label for="iregiao">Centro-Oeste: </label>
+            <input type="radio" name="regiao" id="iregiao">
+            <label for="iregiao">Sudeste: </label>
+            <input type="radio" name="regiao" id="iregiao">
+            <label for="iregiao">Sul: </label>
+            <input type="radio" name="regiao" id="iregiao">
+        </p>
+        <p>
+            <label for="">Nível de satisfação: </label>
+            <input type="range" name="" id="" min="1" max="5" value="2">
+        </p>
+        <p>
+            <label for="isemana">Semana: </label>
+            <input type="week" name="semana" id="isemana">
+        </p>
+        <p>
+            <label for="ilogin">Já possui cadastro? </label>
+            <input type="button" name="login" id="ilogin" value="Entre Aqui!">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

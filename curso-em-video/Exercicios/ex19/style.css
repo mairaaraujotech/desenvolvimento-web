@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+h2.basico {
+    color: darkblue;
+}
+
+h2.intermediario {
+    color: crimson;
+}
+
+h2.avancado {
+    color:  darkmagenta;
+}

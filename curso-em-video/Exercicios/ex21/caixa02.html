@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        h1#sombraInterna {
+            box-shadow: inset 2px 1px 14px 6px darkgray;
+            margin: 10px 0px;
+        }
+        h1#sombraExterna {
+            box-shadow: 2px 1px 14px 6px darkgray;
+            margin: 10px 0px;
+            font-size: 16px;
+        }
+        nav {
+            background-color: dimgray;
+            padding: 5px;
+            box-shadow: 5px 5px 5px dimgray;
+            /*
+            box-shadow: deslocamento horizontal (+/-) deslocamento vertical (+/-) espalhamento e cor
+            usar sempre uma cor transparente (RGB)
+            */
+        }
+        a {
+            color: white;
+            padding: 10px;
+        }
+        main {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 15px 15px 0px 0px;
+            box-shadow: 5px 5px 5px black;
+            
+        }
+        article {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        #autor{
+            margin: 10px 0px;
+            padding: 10px 0;
+            background-color: dimgray;
+            text-align: right;
+        }
+        div#circulo {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 1px 1px 15px 10px black;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="sombraInterna">Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+        <h1 id="sombraExterna">Visite nossa Loja</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, ipsum? Aspernatur, veniam asperiores. At doloribus sint impedit fugiat quae tenetur eveniet expedita rem commodi enim possimus, laboriosam optio. Nisi, dolorum.
+                </p>
+                <aside>
+                    <p id="autor">Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <div id="circulo"></div>
+</body>
+<footer>
+    <p>Desenvolvido por Curso em Vídeo</p>
+</footer>
+</html>
