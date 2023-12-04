@@ -17,7 +17,6 @@
     --fonte-principal: 'Bebas Neue', 'Times New Roman', Times, serif;
     --fonte-secundaria: 'Quicksand', Arial, Helvetica, sans-serif;
     --fonte-destaque: Arial;
-    
 }
 ::-webkit-scrollbar {width: 0px; height: 0px;}
 body {
@@ -32,7 +31,6 @@ h1 {
     letter-spacing: 0.5rem;
     font-size: 2em;
     margin: 15% 0%;
-
 }
 h2 {
     font-family: var(--fonte-secundaria);
@@ -40,7 +38,6 @@ h2 {
     text-align: center;
     padding: 20px;
     margin: 5% 15%;
-
     border: solid 2px var(--cor-de-destaque);
     border-radius: 10px;
     font-size: 0.8em;
@@ -55,17 +52,20 @@ h2:hover {
 .container {
     width: 100%;
 }
-.imagem {
-    width: 150px;
-    height: 150px;
+.imagem,
+.toque__imagem,
+.toque__video {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 7%;
     margin-bottom: 7%;
-
 }
-
+.imagem,
+.toque__imagem {
+    width: 150px;
+    height: 150px;
+}
 body > p {
     text-align: center;
     margin-bottom: 5%;
@@ -101,7 +101,19 @@ footer > p > a:hover {
     border-radius: 3px;
     box-sizing: border-box;
 }
-
+.tutorial {
+    margin: 5% 15%;
+}
+.toque__titulo {
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    padding: 15px;
+    margin: 5% 15%;
+    font-size: 1em;
+}
+.toque__video {
+    width: 250px;
+}
 @media (min-width: 800px) and (max-width: 1440px) {
     main {
         margin: 0% 25%;
