@@ -8,11 +8,12 @@
     padding: 0;
 }
 :root {
-    --cor-principal: #00487C;
-    --cor-secundaria: #027BCE;
-    --cor-de-fundo: #FFFFFF;
+    --cor-principal: #F37748;
+    --cor-secundaria: #FFD166;
+    --cor-de-fundo: #F4F3EE;
     --cor-de-destaque: #000000;
-    --cor-rodape: #6D676E;
+    --cor-rodape-fundo: #CAC4CE;
+    --cor-rodape-borda: #463F3A;
 
     --fonte-principal: 'Bebas Neue', 'Times New Roman', Times, serif;
     --fonte-secundaria: 'Quicksand', Arial, Helvetica, sans-serif;
@@ -21,6 +22,7 @@
 ::-webkit-scrollbar {width: 0px; height: 0px;}
 body {
     background-color: var(--cor-de-fundo);
+    font-size: 20px;
 }
 main {
     margin: 0% 5%;
@@ -40,11 +42,11 @@ h2 {
     margin: 5% 15%;
     border: solid 2px var(--cor-de-destaque);
     border-radius: 10px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 h2 > a {
     text-decoration: none;
-    color: var(--cor-de-fundo);
+    color: var(--cor-de-destaque);
 }
 h2:hover {
     background-color: var(--cor-secundaria);
@@ -65,6 +67,7 @@ h2:hover {
 .toque__imagem {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
 }
 body > p {
     text-align: center;
@@ -82,24 +85,25 @@ body > p > a:hover {
     color: var(--cor-de-fundo);
 }
 footer {
-    background-color: var(--cor-rodape);
-    color: var(--cor-de-fundo);
+    background-color: var(--cor-rodape-fundo);
+    color: var(--cor-de-destaque);
     font-family: var(--fonte-secundaria);
     line-height: 1.5em;
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-align: center;
     padding: 2%;
+    border-top: dotted 1px var(--cor-rodape-borda);
 }
 footer > p > a {
-    color: var(--cor-de-fundo);
+    color: var(--cor-de-destaque);
     padding: 3px;
     text-decoration: none;
     font-weight: bold;
+    line-height: 2em;
 }
 footer > p > a:hover {
     background-color: var(--cor-secundaria);
-    border-radius: 3px;
-    box-sizing: border-box;
+    border-radius: 7px;
 }
 .tutorial {
     margin: 5% 15%;
@@ -114,11 +118,23 @@ footer > p > a:hover {
 .toque__video {
     width: 250px;
 }
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (min-width: 800px) and (max-width: 2650px) {
     main {
         margin: 0% 25%;
     }
     h1 {
         margin: 10% 0%;
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .imagem {
+        width: 300px;
+        height: 300px;
+    }
+    footer > p {
+        font-size: 1.5em;
+
     }
 }
