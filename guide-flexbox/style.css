@@ -7,6 +7,9 @@
     --cor-de-topico: #B4CDED;
     --cor-de-container: #344966;
     --cor-de-item: #EC7357;
+    --cor-codigo-seletor: #F0EC57;
+    --cor-codigo-atributo: #63B0CD;
+    --cor-codigo-valor: #57A773;
     --fonte-principal: 'Roboto', Arial, Helvetica, sans-serif;
     --fonte-secundaria:'Courier New', Courier, monospace;
 }
@@ -34,12 +37,27 @@ h2 {
     letter-spacing: 3px;
 }
 .codigo,
-.nota {
-    font-family: var(--fonte-secundaria);
-    margin: 10px 0;
+.nota,
+.identacao {
+    font-family: var(--fonte-secundaria);;
 }
-.codigo {
+.codigo,
+.identacao {
     font-size: 0.8em;
+    background-color: black;
+}
+.identacao {
+    padding-left: 30px;
+}
+.codigo-seletor {
+    color: var(--cor-codigo-seletor);
+    text-indent: 30px;
+}
+.codigo-atributo {
+    color: var(--cor-codigo-atributo);
+}
+.codigo-valor {
+    color: var(--cor-codigo-valor);
 }
 .nota {
     font-size: 0.6em;
@@ -106,37 +124,44 @@ align-items: flex-start;
 #container-11 {
     align-items: baseline;
 }
+#container-12,
+#container-13,
+#container-14,
+#container-15,
+#container-16,
+#container-17 {
+    height: 525px;
+    flex-wrap: wrap;
+}
 #container-12 {
     align-content: flex-start
 }
 #container-13 {
     align-content: flex-end;
 }
-#container-12,
-#container-13 {
-    height: 525px;
-    flex-wrap: wrap;
+#container-14 {
+    align-content: center;
 }
-#container-13 {
-
+#container-15 {
+    align-content: stretch;
 }
-#container-07__item-01,
-#container-07__item-02,
-#container-07__item-03,
-#container-08__item-01,
-#container-08__item-02,
-#container-08__item-03,
-#container-09__item-01,
-#container-09__item-02,
-#container-09__item-03,
-#container-10__item-01,
-#container-10__item-02,
-#container-10__item-03,
-#container-11__item-01,
-#container-11__item-02,
-#container-11__item-03,
+#container-16 {
+    align-content: space-between;
+}
+#container-17 {
+    align-content: space-around;
+}
+.container-07,
+.container-08,
+.container-09,
+.container-10,
+.container-11,
 .container-12,
-.container-13 {
+.container-13,
+.container-14,
+.container-15,
+.container-16,
+.container-17 {
     background-color: var(--cor-de-item);
     margin: 10px 0;
     border: solid 2px black;
@@ -184,43 +209,82 @@ align-items: flex-start;
     margin-top: 40px;
 }
 .container-12,
-.container-13 {
+.container-13,
+.container-14,
+.container-16,
+.container-17 {
     height: 150px;
 }
 #container-12__item-01,
-#container-13__item-01 {
+#container-13__item-01,
+#container-14__item-01,
+#container-15__item-01,
+#container-16__item-01,
+#container-17__item-01 {
     width: 150px;
 }
 #container-12__item-02,
-#container-13__item-02 {
+#container-13__item-02,
+#container-14__item-02,
+#container-15__item-02,
+#container-16__item-02,
+#container-17__item-02 {
     width: 200px;
 }
 #container-12__item-03,
-#container-13__item-03 {
+#container-13__item-03,
+#container-14__item-03,
+#container-15__item-03,
+#container-16__item-03,
+#container-17__item-03 {
     width: 250px;
 }
 #container-12__item-04,
-#container-13__item-04 {
+#container-13__item-04,
+#container-14__item-04,
+#container-15__item-04,
+#container-16__item-04,
+#container-17__item-04 {
     width: 300px;
 }
 #container-12__item-05,
-#container-13__item-05 {
+#container-13__item-05,
+#container-14__item-05,
+#container-15__item-05,
+#container-16__item-05,
+#container-17__item-05 {
     width: 150px;
 }
 #container-12__item-06,
-#container-13__item-06 {
+#container-13__item-06,
+#container-14__item-06,
+#container-15__item-06,
+#container-16__item-06,
+#container-17__item-06 {
     width: 200px;
 }
 #container-12__item-07,
-#container-13__item-07 {
+#container-13__item-07,
+#container-14__item-07,
+#container-15__item-07,
+#container-16__item-07,
+#container-17__item-07 {
     width: 250px;
 }
 #container-12__item-08,
-#container-13__item-08 {
+#container-13__item-08,
+#container-14__item-08,
+#container-15__item-08,
+#container-16__item-08,
+#container-17__item-08 {
     width: 300px;
 }
 #container-12__item-09,
-#container-13__item-09 {
+#container-13__item-09,
+#container-14__item-09,
+#container-15__item-09,
+#container-16__item-09,
+#container-17__item-09 {
     width: 150px;
 }
 .rodape {

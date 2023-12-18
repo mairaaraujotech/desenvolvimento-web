@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Guide Flexbox</title>
+    <title>Flexbox Guide</title>
 </head>
 <body>
     <h1>Guia Prático Flexbox</h1>
     <div class="topico">
         <div class="texto">
             <h2>Caixa 01</h2>
-            <p class="codigo">.container {display: flex; justify-content: flex-start;}</p>
+            <p class="codigo">
+                <span class="codigo-seletor">.container {</span><br>
+                <div class="identacao">
+                    <span class="codigo-atributo">display:</span>
+                    <span class="codigo-valor">flex;</span><br>
+                    <span class="codigo-atributo">justify-content:</span>
+                    <span class="codigo-valor">flex-start;</span><br>
+                </div>
+                <span class="codigo-seletor codigo">}</span>
+            </p>
         </div>
         <div class="container" id="container-01">
             <div class="container__item"></div>
@@ -80,9 +89,9 @@
             <p class="codigo">.container {display: flex; align-items: flex-start}</p>
         </div>
         <div class="container" id="container-07">
-            <div id="container-07__item-01"></div>
-            <div id="container-07__item-02"></div>
-            <div id="container-07__item-03"></div>
+            <div id="container-07__item-01" class="container-07"></div>
+            <div id="container-07__item-02" class="container-07"></div>
+            <div id="container-07__item-03" class="container-07"></div>
         </div>
     </div>
     <div class="topico">
@@ -91,9 +100,9 @@
             <p class="codigo">.container {display: flex; align-items: flex-end}</p>
         </div>
         <div class="container" id="container-08">
-            <div id="container-08__item-01"></div>
-            <div id="container-08__item-02"></div>
-            <div id="container-08__item-03"></div>
+            <div id="container-08__item-01" class="container-08"></div>
+            <div id="container-08__item-02" class="container-08"></div>
+            <div id="container-08__item-03" class="container-08"></div>
         </div>
     </div>
     <div class="topico">
@@ -102,9 +111,9 @@
             <p class="codigo">.container {display: flex; align-items: center;}</p>
         </div>
         <div class="container" id="container-09">
-            <div id="container-09__item-01"></div>
-            <div id="container-09__item-02"></div>
-            <div id="container-09__item-03"></div>
+            <div id="container-09__item-01" class="container-09"></div>
+            <div id="container-09__item-02" class="container-09"></div>
+            <div id="container-09__item-03" class="container-09"></div>
         </div>
     </div>
     <div class="topico">
@@ -114,9 +123,9 @@
             <p class="nota"> A altura dos itens irá ocupar a mesma altura do container. Não foi defidinido um height para os itens.</p>
         </div>
         <div class="container" id="container-10">
-            <div id="container-10__item-01"></div>
-            <div id="container-10__item-02"></div>
-            <div id="container-10__item-03"></div>
+            <div id="container-10__item-01" class="container-10"></div>
+            <div id="container-10__item-02" class="container-10"></div>
+            <div id="container-10__item-03" class="container-10"></div>
         </div>
     </div>
     <div class="topico">
@@ -126,9 +135,9 @@
             <p class="nota"> Os itens são alinhados de acordo a base da linha do texto.</p>
         </div>
         <div class="container" id="container-11">
-            <div id="container-11__item-01"><p>Texto</p><hr></div>
-            <div id="container-11__item-02"><p>Texto</p><hr></div>
-            <div id="container-11__item-03"><p>Texto</p><hr></div>
+            <div id="container-11__item-01" class="container-11"><p>Texto</p><hr></div>
+            <div id="container-11__item-02" class="container-11"><p>Texto</p><hr></div>
+            <div id="container-11__item-03" class="container-11"><p>Texto</p><hr></div>
         </div>
     </div>
     <div class="topico">
@@ -151,7 +160,7 @@
     <div class="topico">
         <div class="texto">
             <h2>Caixa 13</h2>
-            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: flex-start;}</p>
+            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: flex-end;}</p>
         </div>
         <div class="container" id="container-13">
             <div id="container-13__item-01" class="container-13"></div>
@@ -167,70 +176,71 @@
     </div>
     <div class="topico">
         <div class="texto">
-            <h2>Caixa 12</h2>
-            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: flex-start;}</p>
+            <h2>Caixa 14</h2>
+            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: center;}</p>
         </div>
-        <div class="container" id="container-12">
-            <div id="container-12__item-01" class="container-12"></div>
-            <div id="container-12__item-02" class="container-12"></div>
-            <div id="container-12__item-03" class="container-12"></div>
-            <div id="container-12__item-04" class="container-12"></div>
-            <div id="container-12__item-05" class="container-12"></div>
-            <div id="container-12__item-06" class="container-12"></div>
-            <div id="container-12__item-07" class="container-12"></div>
-            <div id="container-12__item-08" class="container-12"></div>
-            <div id="container-12__item-09" class="container-12"></div>
-        </div>
-    </div>
-    <div class="topico">
-        <div class="texto">
-            <h2>Caixa 12</h2>
-            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: flex-start;}</p>
-        </div>
-        <div class="container" id="container-12">
-            <div id="container-12__item-01" class="container-12"></div>
-            <div id="container-12__item-02" class="container-12"></div>
-            <div id="container-12__item-03" class="container-12"></div>
-            <div id="container-12__item-04" class="container-12"></div>
-            <div id="container-12__item-05" class="container-12"></div>
-            <div id="container-12__item-06" class="container-12"></div>
-            <div id="container-12__item-07" class="container-12"></div>
-            <div id="container-12__item-08" class="container-12"></div>
-            <div id="container-12__item-09" class="container-12"></div>
+        <div class="container" id="container-14">
+            <div id="container-14__item-01" class="container-14"></div>
+            <div id="container-14__item-02" class="container-14"></div>
+            <div id="container-14__item-03" class="container-14"></div>
+            <div id="container-14__item-04" class="container-14"></div>
+            <div id="container-14__item-05" class="container-14"></div>
+            <div id="container-14__item-06" class="container-14"></div>
+            <div id="container-14__item-07" class="container-14"></div>
+            <div id="container-14__item-08" class="container-14"></div>
+            <div id="container-14__item-09" class="container-14"></div>
         </div>
     </div>
     <div class="topico">
         <div class="texto">
-            <h2>Caixa 12</h2>
-            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: flex-start;}</p>
+            <h2>Caixa 15</h2>
+            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: stretch;}</p>
+            <p class="nota">Não foi definido um height para os itens.</p>
         </div>
-        <div class="container" id="container-12">
-            <div id="container-12__item-01" class="container-12"></div>
-            <div id="container-12__item-02" class="container-12"></div>
-            <div id="container-12__item-03" class="container-12"></div>
-            <div id="container-12__item-04" class="container-12"></div>
-            <div id="container-12__item-05" class="container-12"></div>
-            <div id="container-12__item-06" class="container-12"></div>
-            <div id="container-12__item-07" class="container-12"></div>
-            <div id="container-12__item-08" class="container-12"></div>
-            <div id="container-12__item-09" class="container-12"></div>
+        <div class="container" id="container-15">
+            <div id="container-15__item-01" class="container-15"></div>
+            <div id="container-15__item-02" class="container-15"></div>
+            <div id="container-15__item-03" class="container-15"></div>
+            <div id="container-15__item-04" class="container-15"></div>
+            <div id="container-15__item-05" class="container-15"></div>
+            <div id="container-15__item-06" class="container-15"></div>
+            <div id="container-15__item-07" class="container-15"></div>
+            <div id="container-15__item-08" class="container-15"></div>
+            <div id="container-15__item-09" class="container-15"></div>
         </div>
     </div>
     <div class="topico">
         <div class="texto">
-            <h2>Caixa 12</h2>
-            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: flex-start;}</p>
+            <h2>Caixa 16</h2>
+            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: space-between;}</p>
         </div>
-        <div class="container" id="container-12">
-            <div id="container-12__item-01" class="container-12"></div>
-            <div id="container-12__item-02" class="container-12"></div>
-            <div id="container-12__item-03" class="container-12"></div>
-            <div id="container-12__item-04" class="container-12"></div>
-            <div id="container-12__item-05" class="container-12"></div>
-            <div id="container-12__item-06" class="container-12"></div>
-            <div id="container-12__item-07" class="container-12"></div>
-            <div id="container-12__item-08" class="container-12"></div>
-            <div id="container-12__item-09" class="container-12"></div>
+        <div class="container" id="container-16">
+            <div id="container-16__item-01" class="container-16"></div>
+            <div id="container-16__item-02" class="container-16"></div>
+            <div id="container-16__item-03" class="container-16"></div>
+            <div id="container-16__item-04" class="container-16"></div>
+            <div id="container-16__item-05" class="container-16"></div>
+            <div id="container-16__item-06" class="container-16"></div>
+            <div id="container-16__item-07" class="container-16"></div>
+            <div id="container-16__item-08" class="container-16"></div>
+            <div id="container-16__item-09" class="container-16"></div>
+        </div>
+    </div>
+    <div class="topico">
+        <div class="texto">
+            <h2>Caixa 17</h2>
+            <p class="codigo">.container {display: flex; flex-wrap: wrap; align-content: space-around;}</p>
+        </div>
+        <div class="container" id="container-17">
+            <div id="container-17__item-01" class="container-17"></div>
+            <div id="container-17__item-02" class="container-17"></div>
+            <div id="container-17__item-03" class="container-17"></div>
+            <div id="container-17__item-04" class="container-17"></div>
+            <div id="container-17__item-05" class="container-17"></div>
+            <div id="container-17__item-06" class="container-17"></div>
+            <div id="container-17__item-07" class="container-17"></div>
+            <div id="container-17__item-08" class="container-17"></div>
+            <div id="container-17__item-09" class="container-17"></div>
         </div>
     </div>
     <footer class="rodape">
