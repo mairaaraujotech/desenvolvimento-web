@@ -1,0 +1,22 @@
+#cabecalho {
+    background-color: #344966;
+    margin-bottom: 20px;
+}
+#cabecalho__titulo {
+    font-family: var(--fonte-principal);
+    color: #F0F4EF;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 50px 0 20px 0;
+}
+#cabecalho__texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    color: lightgray;
+    width: 50vw;
+    margin: auto;
+    padding-bottom: 50px;
+}

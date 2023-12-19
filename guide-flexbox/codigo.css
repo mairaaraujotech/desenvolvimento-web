@@ -1,0 +1,34 @@
+.titulo-bloco{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    margin: 20px auto;
+    width: 90%;
+}
+.codigo {
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    font-size: 1em;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+.codigo-seletor {
+    color: var(--cor-codigo-seletor);
+    padding-left: 20px;
+}
+.codigo-atributo {
+    color: var(--cor-codigo-atributo);
+    padding: 0 0 0 50px;
+}
+.codigo-valor {
+    color: var(--cor-codigo-valor);
+}
+.codigo__nota {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 20px auto;
+    width: 90%;
+}
