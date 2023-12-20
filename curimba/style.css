@@ -32,7 +32,7 @@ h1 {
     text-align: center;
     letter-spacing: 0.5rem;
     font-size: 2em;
-    margin: 15% 0%;
+    margin: 5% 0%;
 }
 h2 {
     font-family: var(--fonte-secundaria);
@@ -43,7 +43,7 @@ h2 {
     margin: 5% 15%;
     border: solid 2px var(--cor-de-destaque);
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 label {
     font-size: 0.7em;
@@ -62,7 +62,7 @@ h2:hover {
 .toque__imagem,
 .toque__video {
     display: block;
-    margin: 7% auto;
+    margin: 5% auto;
 }
 .imagem,
 .toque__imagem {
@@ -159,16 +159,17 @@ footer > p > a:hover {
     text-decoration: underline;
     background-color: var(--cor-secundaria);
 } 
-@media (min-width: 750px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) { /*and (max-width: 1024px)*/
     main {
-        margin: 0% 25%;
+        margin: 0% 10%;
     }
     h1 {
-        margin: 10% 0%;
+        margin: 5% 0%;
         font-size: 3em;
     }
     h2 {
         font-size: 1.5em;
+        margin: 2% 15%;
     }
     h3 {
         font-size: 1em;
@@ -177,27 +178,11 @@ footer > p > a:hover {
         font-size: 1.5em;
     }
     .imagem {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
     footer > p {
-        font-size: 1.5em;
+        font-size: 1em;
 
-    }
-}
-@media (min-width: 1025px) and (max-width: 2560px) {
-    h1 {
-        margin: 10% 0%;
-    }
-    .imagem {
-        margin: 5% auto;
-        width: 300px;
-        height: 300px;
-    }
-    h2 {
-        margin: 2% 30%;
-    }
-    ul {
-        margin: 0 25%;
     }
 }
