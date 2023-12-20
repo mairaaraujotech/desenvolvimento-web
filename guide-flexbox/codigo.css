@@ -1,29 +1,29 @@
-.titulo-bloco{
+.topico__titulo{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 3px;
     margin: 20px auto;
     width: 90%;
 }
-.codigo {
+.topico__codigo {
     font-family: var(--fonte-secundaria);
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.8em;
     background-color: black;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 20px auto;
     width: 90%;
 }
-.codigo-seletor {
+.topico__codigo__seletor {
     color: var(--cor-codigo-seletor);
     padding-left: 20px;
 }
-.codigo-atributo {
+.topico__codigo__atributo {
     color: var(--cor-codigo-atributo);
     padding: 0 0 0 50px;
 }
-.codigo-valor {
+.topico__codigo__valor {
     color: var(--cor-codigo-valor);
 }
 .codigo__nota {
