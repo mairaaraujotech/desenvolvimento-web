@@ -107,13 +107,13 @@ align-items: flex-start;
         width: 50px;
     }
     .container__item-width-p {
-        width: 100px;
+        width: 75px;
     }
     .container__item-width-m {
-        width: 150px;
+        width: 100px;
     }
     .container__item-width-g {
-        width: 200px;
+        width: 125px;
     }
     .container__item-height {
         height: 50px;
