@@ -20,3 +20,12 @@
     margin: auto;
     padding-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+    #cabecalho__titulo {
+        font-size: 1em;
+    }
+    #cabecalho__texto {
+        width: 80vw;
+        font-size: 0.6em;
+    }
+}

@@ -32,3 +32,12 @@
     margin: 20px auto;
     width: 90%;
 }
+@media screen and (max-width: 768px) {
+    .topico__codigo {
+        font-weight: normal;
+        font-size: 0.6em;
+    }
+    .codigo__nota {
+        font-size: 0.6em;
+    }
+}

@@ -56,3 +56,8 @@ body {
     background-color: var(--cor-de-topico);
     border-radius: 3px;
 }
+@media screen and (max-width: 768px) {
+    .rodape {
+        font-size: 0.6em;
+    }
+}
