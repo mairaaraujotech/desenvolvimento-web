@@ -37,6 +37,12 @@
         font-weight: normal;
         font-size: 0.6em;
     }
+    .topico__codigo__seletor {
+        padding-left: 10px;
+    }
+    .topico__codigo__atributo {
+        padding: 0 0 0 30px;
+    }
     .codigo__nota {
         font-size: 0.6em;
     }
