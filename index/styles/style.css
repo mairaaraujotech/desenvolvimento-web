@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #D9DCD6;
+}
+header {
+    background-color: rgba(128, 194, 214, 0.500)
+}
+header, nav, main {
+    width: 300px;
+    margin: 30px auto 10px;
+}
+
+header p, main > p {
+    line-height: 1.5em;
+    background-color: white;
+    padding: 10px;
+}
+#introducao, main > p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 10px 10px 15px;
+}
+a {
+    text-decoration: none;
+    color: #16425B;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+#voltar {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #16425B;
+    padding: 10px;
+    margin: 30px 70px;
+}
+#voltar > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#voltar >a:hover {
+    text-decoration: underline;
+    
+}
+h1, h2 {
+    text-align: center;
+    padding: 10px 20px;
+}
+h2 {
+    background-color: rgba(128, 194, 214, 0.500);
+    font-size: 1.2em;
+}
+ul {
+    background-color: white;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+}
+li {
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+}
+li a, .voltar a {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+li a:hover, .voltar a:hover{
+    color: white;
+    background-color: #16425B;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#nota {
+    padding: 10px;
+}
+#nota p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+main > p {
+    font-size: 0.7em;
+}
+.voltar {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+}
+footer a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}

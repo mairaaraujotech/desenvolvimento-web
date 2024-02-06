@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=viewport-width, inicial-scale=1.0">
+        <title>Tabelas</title>
+        <style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                background-color: #C4BBAF;
+            }
+
+            .tabela {
+                width: 400px;
+                margin: auto;
+                border: 1px solid black; /*criando uma borda em volta de toda a tabela*/
+            }
+            #primeiraTabela {
+                height: 400px;
+            }
+            #segundaTabela {
+                height: 150px;
+                border-collapse: collapse; /*faz com que os espaços entre as células deixem de existir*/
+            }
+            #terceiraTabela {
+                position: relative; /*Configurando CABEÇALHO MÓVEL*/
+            }
+            thead > tr> th { /*Configurando CABEÇALHO MÓVEL*/
+                  position: sticky;
+                  top: 0;
+                  background-color: #27476E;
+              }
+              caption {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: white;
+                padding: 10px;
+                background-color: #001D4A;
+                border: 1px solid black;
+              }
+            tr.linha {
+                background-color: darkgray;
+            }
+            /*Configurando Efeito Zebrado*/
+            tbody > tr:nth-child(even) {
+                  background-color: #006992;
+                  color: white;
+              }
+              tbody > tr:nth-child(odd) {
+                  background-color: white;
+              }
+              td.numero {
+                text-align: right;
+              }
+            td {
+                text-align: center;
+                border: 1px solid black; /*criando uma borda em volta de cada célula*/
+                vertical-align: middle; /*alinhamento vertical da célula outras opções: top e bottom*/
+                padding: 10px;
+            }
+            th {
+                background-color: #27476E;
+                color: white;
+                border: 1px solid black;
+              }
+            #totalPopulacao {
+                text-align: center;
+                font-weight: bold;
+                background-color: #27476E;
+                color: white;
+            }
+            /*Configurando barra de rolagem exclusiva para tabelas quado sua largura for maior que a da tela*/
+            div#container {
+                overflow-x: auto;
+            }
+            .tableheader {
+                width: 100px;
+            }
+            .coluna {
+                width: 400px;
+            }
+        </style>
+    </head>
+      <body>
+        <h1>Tabela Simples</h1>
+        <table class="tabela" id="primeiraTabela"> <!--TAG para iniciar Tabelas no HTML-->
+            <tr> <!--TAG para inserir uma linha na Tabela (Table Row)-->
+                <td>A1</td> <!--TAG para inserir um dado/célula na Tabela (Table Data)-->
+                <td>B1</td>
+                <td>C1</td>
+            </tr> 
+            <tr class="linha"> <!--Segunda Linha-->
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr> <!--Terceira Linha-->
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr class="linha"> <!--Terceira Linha-->
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr> 
+        </table>
+        <h1>Mesclando Células</h1>
+        <table class="tabela" id="segundaTabela">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td colspan="2">C</td> <!--Célula expandida para 2 colunas-->
+                <!--<td>D</td>--> <!--Célula apagada para expandir a célula C-->
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+                <td rowspan="3">H</td> <!--Célula expandida para 3 linhas-->
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>J</td>
+                <td>K</td>
+                <!--<td>L</td>--> <!--Célula apagada para expandir a célula H-->
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>N</td>
+                <td>O</td> 
+                <!--<td>P</td>--> <!--Célula apagada para aumentar a célula H-->
+            </tr>
+        </table>
+        <h1>Tabela Grande Verticalmente</h1>
+        <table class="tabela" id="terceiraTabela">
+            <caption>População dos Estados do Brasil</caption>
+            <thead> <!--Cabeçalho da Tabela-->
+                <tr>
+                    <th>Estado</th> <!--Table Header (Título da Coluna)-->
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>  <!--Corpo da Tabela-->
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="numero">41.262.199	</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="numero">19.597.330</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">15.989.929</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numero">14.016.906</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numero">10.444.526</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="numero">10.693.929</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="numero">8.796.448</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="numero">8.452.381</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="numero">7.581.051</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="numero">6.248.436</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="numero">6.003.788</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="numero">6.574.789</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="numero">3.514.952</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="numero">3.766.528</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="numero">3.483.985</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="numero">3.035.122</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="numero">3.168.027</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="numero">3.118.360</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="numero">3.120.494</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="numero">2.923.024</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="numero">2.449.024</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="numero">2.068.017</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="numero">1.562.409</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="numero">1.383.445</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="numero">733.559</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="numero">669.526</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="numero">450.479</td>
+                </tr>
+            </tbody>
+            <tfoot>  <!--Rodapé da Tabela-->
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td id="totalPopulacao">214 milhões</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>Tabela Grande Horizontalmente</h1>
+        <div id="container">
+            <table class="tabela" id="quartaTabela">
+                <caption>Tabelas Responsivas</caption>
+                <thead>
+                    <tr>
+                        <th class="tableheader">Produtos</th>
+                        <th >Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Televisão</td>
+                        <td>05</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>35</td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td>55</td>
+                        <td>65</td>
+                        <td>75</td>
+                        <td>85</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>HeadPhone</td>
+                        <td>05</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>35</td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td>55</td>
+                        <td>65</td>
+                        <td>75</td>
+                        <td>85</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Geladeira</td>
+                        <td>05</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>35</td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td>55</td>
+                        <td>65</td>
+                        <td>75</td>
+                        <td>85</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Microondas</td>
+                        <td>05</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>35</td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td>55</td>
+                        <td>65</td>
+                        <td>75</td>
+                        <td>85</td>
+                        <td>95</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+    </body>
+    <footer>Rio de Janeiro | 2023</footer>
+</html>
