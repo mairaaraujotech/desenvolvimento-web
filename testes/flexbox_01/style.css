@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-de-fundo: #F1F0EA;
+    --cor-de-realce: #2E3532;
+    --cor-paleta: #FFFFFF;
+    --fonte-principal: "Inter", Arial;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}
+header {
+    padding: 50px 20px 50px;
+}
+h1 {
+    color: var(--cor-de-realce);
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+#container {
+    padding: 0px 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.container__item {
+    background-color: var(--cor-paleta);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+h2 {
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-de-realce);
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid var(--cor-de-realce);
+    border-radius: 3px;
+    margin: 20px;
+}
+p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.paisagem {
+    object-fit: cover;
+}
+#aviso {
+    padding: 30px 75px;
+}
+h3 {
+    margin: 10px 0px;
+}
+#aviso__nota {
+    text-align: justify;
+    line-height: 1.5;
+}
+footer {
+    background-color: var(--cor-paleta);
+}
+#texto__footer {
+    margin: 10px;
+}
+/*cor de fundo da página*/
+header,
+#container,
+#aviso {
+    background-color: var(--cor-de-fundo);
+}

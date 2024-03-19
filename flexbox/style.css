@@ -1,13 +1,37 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+:root {
+    --cor-de-fundo: #F1F0EA;
+    --cor-de-realce: #2E3532;
+    --cor-paleta-01: #FF6663;
+    --cor-paleta-02: #BFD7EA;
+    --cor-paleta-03: #FFC857;
+    --fonte-principal: "Inter", sans-serif ;
+    --fonte-secundaria: ;
+}
 body {
-    padding: 5%;
-    background-color: aqua;
-
+    padding: 2.5% 5%;
+    background-color: var(--cor-de-fundo);
+    font-size: 36px;
+}
+#titulo-pagina {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    color: var(--cor-de-realce);
+}
+#texto {
+    font-family: var(--fonte-principal);
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 20%;
 }
 #container-01,
 #container-02,
@@ -16,56 +40,19 @@ body {
     margin-bottom: 10px;
     display: flex;
 }
-
-#container-03 {
-    justify-content: space-between;   
-}
 .container-01__item,
 .container-02__item,
-.container-03__item,
-.container-04__item {
-    width: 100%;
-    height: 20vh;
-    border: 1px solid black;
-}
-#container-01_item-01 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #A76D60;
-    text-align: center;
-}
-#container-02_item-01 {
-    background-color: #1E2D2F;
-}
-#container-02_item-02 {
-    background-color: #E0D0C1;
-}
-#container-02_item-03 {
-    background-color: #A76D60;
-}
-#container-02_item-04 {
-    background-color: #601700;
-}
-#container-03_item-01 {
-    background-color: #3B413C;
-}
-#container-03_item-02 {
-    background-color: #9DB5B2;
-}
-#container-03_item-03 {
-    background-color: #DAF0EE;
-}
-#container-03_item-04 {
-    background-color: #94D1BE;
-}
-
-
 .container-03__item {
+    width: 100vw;
     height: 150px;
-    width: 300px;
-    border: 1px solid black;
+    border: 1px solid var(--cor-de-realce);
 }
-#container-01_texto {
-    height: 20px;
+.container-01__item {
+    background-color: var(--cor-paleta-01);
+}
+.container-02__item {
+    background-color: var(--cor-paleta-02);
+}
+.container-03__item {
+    background-color: var(--cor-paleta-03);
 }
