@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com Links</title>
+    <title>Mídias em HTML</title>
 </head>
 <body>
-    <h1>Usando links externos</h1>
+    <h1>Imagens Dinâmicas</h1>
     <p>
-        Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositóri público</a>.
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
     </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
     <p>
-        Você também pode acessar o meu <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external" >Canal no Youtube</a>.
+        Vamos aprender a reproduzir áudios em HTML.
     </p>
-    <h1>Usando links internos</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/audio_01.mp3" type="audio/mpeg">
+    </audio>
     <p>
-        Esta é a primeira página do site. Se você você quiser, pode acessar também a minha <a href="pag02.html" rel="next" target="self">segunda página</a>.
+        Infelizmente o seu navegador não suporta nossa áudio.
     </p>
-    <p>
-        Você também pode acessar a nossa <a href="noticias/pag03.html">Página de Notícias</a>.
-    </p>
-    <h1>Links para download</h1>
-    <ul>
-        <li><a href="livro/meuLivro.pdf" download="meuLivro.pdf" type="application/pdf">Baixar o livro em PDF</a>.</li>
-        <li><a href="livro/meuLivro.zip" download="meuLivro.zip" type="application/zip">Livro compactado em ZIP</a>.</li>
-    </ul>
 </body>
 </html>

@@ -123,6 +123,8 @@ footer > p > a:hover {
 .toque__video {
     width: 250px;
 }
+
+/*Início das classes para exibir/ocultar lista*/
 .lista__botao:checked ~ .lista__menu {
     display: block;
 
@@ -131,6 +133,9 @@ footer > p > a:hover {
 .lista__botao {
     display: none;
 }
+
+/*fim  das classes para exibir/ocultar lista*/
+
 .lista__menu {
     list-style-type: none;
 }

@@ -3,55 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de Textos</title>
-    <style>
-        mark {
-            background-color: aqua;
-        }
-    </style>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negrito Destaque</h2>
-    <p>
-        Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;&lt;/b&gt; (sem semântica).
-    </p>
-    <p>
-        Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;&lt;/strong&gt; (com semântica).
-    </p>
-    <h2>Itálico / Ênfase</h2>
-    <p>
-        Nesta frase temos um <i>termo itálico</i> usando a tag &lt;i&gt;&lt;/i&gt; (sem semântica).
-    </p>
-    <p>
-        Nesta frase temos um <em>termo com ênfase</em> usando a tag &lt;em&gt;&lt;/em&gt; (com semântica).
-    </p>
-    <h2>Texto Marcado</h2>
-    <p>
-        Podemos criar também um <mark>texto marcado</mark> usando a tag &lt;mark&gt;&lt;/mark&gt;.
-    </p>
-    <p>
-        Podemos criar um outro <mark style="background-color: lime;">texto marcado</mark> usando a tag &lt;mark&gt;&lt;/mark&gt; e mudar a cor usando CSS dentro da tag.
-    </p>
-    <p>
-        Podemos criar vários <mark>textos marcados</mark> usando a tag &lt;mark&gt;&lt;/mark&gt; e mudar a cor usando CSS na tag &lt;style&gt;&lt;/style&gt; dentro do head da página.
-    </p>
-    <h2>Texto Pequeno</h2>
-    <p>
-        Estamos criando um <small>texto pequeno</small> nesse parágrafo usando a tag &lt;small&gt;&lt;/small&gt;.
-    </p>
-    <h2>Texto deletado</h2>
-    <p>
-        Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido mas não considerado.
-    </p>
-    <h2>Texto inserido</h2>
-    <p>
-        Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.
-    </p>
-    <p>Existe também o <u>texto sublinhado</u> (não semântica).</p>
-    <h2>Texto sobrescrito</h2>
-    <p>Para escrever coisas do tipo x<sup>2</sup>+3.</p>
-    <h2>Texto subscrito</h2>
-    <p>Para escrever coisas do tipo H<sub>2</sub>O.</p>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ligar para padaria</li>
+        <li>Ir pra faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar pra casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Cliper</li>
+            <li>Visual</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol  type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul>
+            <li>Mario Bros</li>
+            <ul>
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Level</li>
+            </ul>
+            <li>Ninja Garden</li>
+        </ul>
+        <li>SNES</li>
+        <ul>
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PS</li>
+        <ul>
+            <li>Final Fantasy</li>
+            <li>Castlevânia</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um
+        <dt>JavaScrip</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+    </dl>
 </body>
 </html>
