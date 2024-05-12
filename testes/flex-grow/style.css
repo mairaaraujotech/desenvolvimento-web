@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo*/
+
+body {
+    background-color: antiquewhite;
+}
+#cabecalho {
+    background-color: white;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#titulo {
+    text-align: center;
+    padding: 10px;
+}
+#descricao {
+    text-align: center;
+    padding: 10px;
+}
+
+#container {
+    margin: auto;
+}
+
+
+/*FLEXBOX*/
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container__item {
+    flex-grow: 1;
+}
