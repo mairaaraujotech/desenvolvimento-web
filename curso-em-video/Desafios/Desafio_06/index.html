@@ -3,72 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 13</title>
+    <title>Desafio 14</title>
     <style>
         table {
             width: 400px;
-            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: gray;
+            color: white;
         }
         td {
-            border: 1px solid black;
-            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Primeira Tabela</h1>
     <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="2">3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td colspan="3">9</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td rowspan="2">13</td>
-            <td colspan="2">14</td>
-            <td>16</td>
-        </tr>
-        <tr>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-        </tr>
-    </table>
-    <h1>Segunda Tabela</h1>
-    <table>
-        <tr>
-            <td colspan="4">1</td>
-            <td rowspan="4">5</td>
-        </tr>
-        <tr>
-            <td rowspan="4">6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-        </tr>
-        <tr>
-            <td colspan="4">22</td>
-        </tr>
+        <thead>
+            <tr>
+                <th rowspan="2">Áreas</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Médias</th>
+            </tr>
+            <tr>
+                <th>Notas 1</th>
+                <th>Notas 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td rowspan="4">Exatas</td>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Exatas</th>
+                <th>0.0</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Humanas</th>
+                <th>0.0</th>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
