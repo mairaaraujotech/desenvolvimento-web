@@ -5,4 +5,5 @@
 [AluraPlus](https://mairaaraujotech.github.io/desenvolvimento-web/aluraplus/) - 
 [Alurinha](https://mairaaraujotech.github.io/desenvolvimento-web/alurinha/) - 
 [Curimba](https://mairaaraujotech.github.io/desenvolvimento-web/curimba/) - 
-[Flexbox Guide](https://mairaaraujotech.github.io/desenvolvimento-web/guide-flexbox/)
+[Flexbox Guide](https://mairaaraujotech.github.io/desenvolvimento-web/guide-flexbox/) -
+[Curso em Vídeo](https://mairaaraujotech.github.io/desenvolvimento-web/curso-em-video/index.html)
