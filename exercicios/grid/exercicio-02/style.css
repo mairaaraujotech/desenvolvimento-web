@@ -40,6 +40,10 @@
     text-align: justify;
 }
 
+.container {
+    text-align: center;
+}
+
 .rodape {
     text-align: center;
     background-color: #D5CAD6;
