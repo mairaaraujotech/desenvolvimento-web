@@ -23,11 +23,13 @@ body {
     margin: 0px 20px;
 }
 .cabecalho__titulo {
-    padding: 30px 10px;
+    padding: 50px 10px;
+    font-size: 3rem;
 }
 
 .cabecalho__texto {
     padding: 10px 10px;
+    font-size: 1rem;
     color: var(--cor-principal);
     background-color: var(--cor-complementar-02);
 }
@@ -38,6 +40,10 @@ body {
 
 .secao {
     padding: 25px 0px;
+}
+
+.secao__titulo {
+    font-size: 2rem;
 }
 
 .rodape {
