@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/resposivo.css">
     <title>Índice</title>
 </head>
 <body>
-    <header>
-        <h1>Índice do Portifólio</h1>
-        <div id="introducao">
-            <p>Este portifólio é formado pelas atividades executadas durante os cursos que realizei e por ideias testadas para consolidar conhecimento: clones de sites já existentes e um tutorial para estudo. As linguagem utilizadas foram: HTML, CSS e JavaScript.</p>
-        </div>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Índice</h1>
+        <p class="cabecalho__texto">
+            Este portifólio é formado pelas atividades executadas durante os cursos que realizei, projetos desenvolvidos para consolidar conhecimento e exercícios de iniciativa própria. As linguagem utilizadas foram: HTML, CSS e JavaScript.
+        </p>
     </header>
     
-    <nav>
-        <h2>CURSOS</h2>
-        <ul>
-            <li><a href="">Alura</a></li>
-            <li><a href="pages/curso-em-video.html">Curso em Vídeo</a></li>
-            <li><a href="">DevMedia</a></li>
-        </ul>
-        <h2>PROJETOS</h2>
-        <ul>
-            <li><a href="">Clones de Sites</a></li>
-            <li><a href="">Tutorial Fron-End</a></li>
-            <li><a href="pages/caderno.html">Caderno de Anotações</a></li>
-            <li><a href="">JavaScript</a></li>
-        </ul>
-    </nav>
-        <main>
-            <p>
-                Parte do conteúdo (imagens e vídeos) e alguns recursos (fontes) estão hospedados em sites de terceiros com a finalidade de diminiur a quantidade de dados no servidor. Porém, a ocorrência de alteraçoes nos servidores de terceiros pode impactar no funcionamento de nossas páginas.
-            </p>
-        </main>
-    <footer>
-        <p>Desenvolvido por <a href="https://www.linkedin.com/in/maira-ara%C3%BAjo-4b8a391a4/" target="_blank">Maira Araújo</a></p>
-        <p>Rio de Janeiro | 2023</p>
+    <main class="principal">
+        <section class="secao"> <!--PROJETOS E ATIVIDADES DE CURSOS-->
+            <h2 class="secao__titulo">Cursos</h2>
+            <!--<ul class="secao__lista">
+                <li class="secao__item"><a href="">Nome do Projeto ou Atividade</a></li>
+                <li class="secao__item"><a href="">Nome do Projeto ou Atividade</a></li>
+                <li class="secao__item"><a href="">Nome do Projeto ou Atividade</a></li>
+            </ul>-->
+        </section>
+        <section class="secao"> <!--MEUS PROJETOS-->
+            <h2 class="secao__titulo">Meus Projetos</h2>
+            <!--<ul class="secao__lista">
+                <li class="secao__item"><a href="">Nome do Projeto</a></li>
+                <li class="secao__item"><a href="">Nome do Projeto</a></li>
+                <li class="secao__item"><a href="">Nome do Projeto</a></li>
+            </ul>-->
+        </section>
+        <section class="secao"> <!--EXERCÍCIOS-->
+            <h2 class="secao__titulo">Exercícios</h2>
+            <!--<ul class="secao__lista">
+                <li class="secao__item"><a href="">Nome do Exercício</a></li>
+                <li class="secao__item"><a href="">Nome do Exercício</a></li>
+                <li class="secao__item"><a href="">Nome do Exercício</a></li>
+            </ul>-->
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">
+            Desenvolvido por <a class="rodape_link" href="https://www.linkedin.com/in/maira-ara%C3%BAjo-4b8a391a4/" target="_blank">Maira Araújo</a>
+        </p>
+        <p class="rodape__texto">
+            Rio de Janeiro | 2023
+        </p>
     </footer>
 </body>
 </html>
