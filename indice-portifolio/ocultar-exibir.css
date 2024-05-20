@@ -1,0 +1,9 @@
+.secao__checkbox:checked ~ .secao__lista {
+    display: block;
+
+}
+
+.secao__lista, 
+.secao__checkbox {
+    display: none;
+}

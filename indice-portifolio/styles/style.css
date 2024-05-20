@@ -46,6 +46,16 @@ body {
     font-size: 2rem;
 }
 
+.secao__lista {
+    list-style-type: none;
+}
+
+.secao__item__link {
+    text-decoration: none;
+    color: var(--cor-complementar-01);
+}
+
+
 .rodape {
     background-color: var(--cor-complementar-02);
     color: var(--cor-principal);
@@ -59,7 +69,6 @@ body {
     font-weight: 900;
     padding: 0px 2px;
 }
-
 
 .rodape_link:hover {
     background-color: var(--cor-principal);
