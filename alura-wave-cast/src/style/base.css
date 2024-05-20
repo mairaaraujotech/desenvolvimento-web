@@ -1,4 +1,20 @@
+/*Variáveis*/
+:root {
+    --cor-texto-principal: #ffffff;
+    --fonte-textos: 'Open Sans', sans-serif;
+    --cor-principal: #2BDEFD;
+    --cor-complementar-01: #01080E;
+    --cor-complementar-02: #999;
+    --cor-complementar-03: #666;
+    --cor-complementar-04: rgba(196, 196, 196, 0.2);
+    --gradiente: linear-gradient(53deg, #072041 0%, #041833 50%, #154580 100%);
+}
+
 /*Reset*/
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -11,21 +27,6 @@ button {
     padding: 0rem;
     font-size: inherit;
     cursor: pointer;
-}
-
-:root {
-    --cor-texto-principal: #ffffff;
-    --fonte-textos: 'Open Sans', sans-serif;
-    --azul-neon: #2BDEFD;
-    --azul-fundo: #01080E;
-    --cinza-claro: #999;
-    --cinza-escuro: #666;
-    --cinza: rgba(196, 196, 196, 0.2);
-    --gradiente: linear-gradient(53deg, #072041 0%, #041833 50%, #154580 100%);
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body {
@@ -44,9 +45,8 @@ main {
 }
 
 /*Aside*/
-
 .menu-lateral {
-    background-color: var(--azul-fundo);
+    background-color: var(--cor-complementar-01);
     padding: 2.5rem .5rem 0;
     font-weight: 400;
     letter-spacing: 0.25rem;
@@ -71,7 +71,7 @@ main {
 }
 
 .ativo {
-    color: var(--azul-neon);
+    color: var(--cor-principal);
 }
 
 .menu-lateral__link button img {
@@ -102,7 +102,7 @@ main {
 }
 
 .cartao { 
-    background: var(--cinza);
+    background: var(--cor-complementar-04);
     border-radius: .5rem;
 }
 
@@ -112,7 +112,6 @@ main {
 }
 
 /*Seção horizontal*/
-
 .secao-horizontal .cartao {
     overflow: hidden;
 }
@@ -152,12 +151,12 @@ main {
   }
   
   .secao__cartoes::-webkit-scrollbar-thumb {
-    background-color: var(--cinza-claro);
+    background-color: var(--cor-complementar-02);
     border-radius: .5rem;
   }
   
   .secao__cartoes::-webkit-scrollbar-thumb:hover {
-    background-color: var(--cinza-escuro);
+    background-color: var(--cor-complementar-03);
   }
   
   .secao__cartoes::-webkit-scrollbar-track {
@@ -166,7 +165,7 @@ main {
  
 /*Navbar*/
 .navbar {
-    background-color: var(--azul-fundo);
+    background-color: var(--cor-complementar-01);
     opacity: 0.9;
     position: fixed;
     bottom: 0;
@@ -186,5 +185,3 @@ main {
     display: block;
     margin-bottom: .25rem;
 }
-
-

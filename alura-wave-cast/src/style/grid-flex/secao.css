@@ -1,9 +1,11 @@
 .secao {
     display: grid;
+    align-items: end;
     row-gap: 2rem;
 }
 
-.secao-horizontal, .secao-vertical {
+.secao-horizontal,
+.secao-vertical {
     grid-template-rows: 70px auto;
 }
 
@@ -24,4 +26,14 @@
     overflow-y: hidden;
     grid-column: 1/3; /*objeto ocupa da 1ª borda até a 3ª borda*/
     column-gap: 1.25rem;
+}
+
+.secao-vertical .secao__cartoes .cartao a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.secao-vertical .secao__cartoes .cartao__titulo {
+    flex-grow: 1;
 }
