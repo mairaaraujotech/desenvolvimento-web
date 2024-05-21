@@ -3,75 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../indice-portifolio/styles/style.css">
+    <link rel="stylesheet" href="../indice-portifolio/styles/ocultar-exibir.css">
+    <link rel="stylesheet" href="../indice-portifolio/styles/resposivo.css">
     <title>Home</title>
 </head>
 <body>
-    <header id="cabecalho">
-        <h1 id="cabecalho__titulo">CURSO EM VÍDEO</h1>
-        <p id="cabecalho__texto">Atividades realizadas no decorrer dos módulos 01, 02, 03 e 04 do Curso de HTML e CSS com o Professor Guanabara.</p>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Curso em Vídeo</h1>
+        <p class="cabecalho__texto">
+            Atividades realizadas no decorrer dos módulos 01, 02, 03 e 04 do Curso de HTML e CSS com o Professor Guanabara.
+        </p>
     </header>
-    <main id="listas">
-        <div> <!--Projetos-->
-            <input type="checkbox" id="exibirProjetos" class="lista__botao">
+    <main class="principal">
+        <section class="secao"> <!--Projetos-->
+            <input type="checkbox" id="exibirProjetos" class="secao__checkbox">
             <label for="exibirProjetos" class="lista__label">
-                <h2 class="lista">Projetos</h2>
+                <h2 class="secao__titulo">Projetos</h2>
             </label>
-            <ul class="lista__menu">
-                <li class="item"><a href="Projetos/Projeto01/index.html" class="item__link" target="_blank">Projeto 01</a></li>
-                <li class="item"><a href="Projetos/Projeto02/index.html" class="item__link" target="_blank">Projeto 02</a></li>
+            <ul class="secao__lista">
+                <li class="secao__item"><a href="Projetos/Projeto01/index.html" class="secao__item__link" target="_blank">Projeto 01</a></li>
+                <li class="secao__item"><a href="Projetos/Projeto02/index.html" class="secao__item__link" target="_blank">Projeto 02</a></li>
             </ul>
-        </div>
-        <div> <!--Desafios-->
-            <input type="checkbox" id="exibirDesafios" class="lista__botao">
+        </section>
+        <section class="secao"> <!--Desafios-->
+            <input type="checkbox" id="exibirDesafios" class="secao__checkbox">
             <label for="exibirDesafios" class="lista__label">
-                <h2 class="lista">Desafios</h2>
+                <h2 class="secao__titulo">Desafios</h2>
             </label>
-            <ul class="lista__menu">
-                <li class="item"><a href="Desafios/Desafio_01/index.html" class="item__link" target="_blank">Desafio 01</a></li>
-                <li class="item"><a href="Desafios/Desafio_02/index.html" class="item__link" target="_blank">Desafio 02</a></li>
-                <li class="item"><a href="Desafios/Desafio_03/index.html" class="item__link" target="_blank">Desafio 03</a></li>
-                <li class="item"><a href="Desafios/Desafio_04/index.html" class="item__link" target="_blank">Desafio 04</a></li>
-                <li class="item"><a href="Desafios/Desafio_05/index.html" class="item__link" target="_blank">Desafio 05</a></li>
-                <li class="item"><a href="Desafios/Desafio_06/index.html" class="item__link" target="_blank">Desafio 06</a></li>
+            <ul class="secao__lista">
+                <li class="secao__item"><a href="Desafios/Desafio_01/index.html" class="secao__item__link" target="_blank">Desafio 01</a></li>
+                <li class="secao__item"><a href="Desafios/Desafio_02/index.html" class="secao__item__link" target="_blank">Desafio 02</a></li>
+                <li class="secao__item"><a href="Desafios/Desafio_03/index.html" class="secao__item__link" target="_blank">Desafio 03</a></li>
+                <li class="secao__item"><a href="Desafios/Desafio_04/index.html" class="secao__item__link" target="_blank">Desafio 04</a></li>
+                <li class="secao__item"><a href="Desafios/Desafio_05/index.html" class="secao__item__link" target="_blank">Desafio 05</a></li>
+                <li class="secao__item"><a href="Desafios/Desafio_06/index.html" class="secao__item__link" target="_blank">Desafio 06</a></li>
             </ul>
-        </div>
-        <div > <!--Exercícios-->
-            <input type="checkbox" id="exibirExercicios" class="lista__botao">
+        </section>
+        <section class="secao"> <!--Exercícios-->
+            <input type="checkbox" id="exibirExercicios" class="secao__checkbox">
             <label for="exibirExercicios" class="lista__label">
-                <h2 class="lista">Exercícios</h2>
+                <h2 class="secao__titulo">Exercícios</h2>
             </label>
-            <ul class="lista__menu">
-                <li class="item"><a href="Exercicios/ex01/index.html"class="item__link" target="_blank">Exercício 01</a></li>
-                <li class="item"><a href="Exercicios/ex02/index.html"class="item__link" target="_blank">Exercício 02</a></li>
-                <li class="item"><a href="Exercicios/ex03/index.html"class="item__link" target="_blank">Exercício 03</a></li>
-                <li class="item"><a href="Exercicios/ex04/index.html"class="item__link" target="_blank">Exercício 04</a></li>
-                <li class="item"><a href="Exercicios/ex05/index.html"class="item__link" target="_blank">Exercício 05</a></li>
-                <li class="item"><a href="Exercicios/ex06/index.html"class="item__link" target="_blank">Exercício 06</a></li>
-                <li class="item"><a href="Exercicios/ex07/index.html"class="item__link" target="_blank">Exercício 07</a></li>
-                <li class="item"><a href="Exercicios/ex08/index.html"class="item__link" target="_blank">Exercício 08</a></li>
-                <li class="item"><a href="Exercicios/ex09/index.html"class="item__link" target="_blank">Exercício 09</a></li>
-                <li class="item"><a href="Exercicios/ex10/index.html"class="item__link" target="_blank">Exercício 10</a></li>
-                <li class="item"><a href="Exercicios/ex11/index.html"class="item__link" target="_blank">Exercício 11</a></li>
-                <li class="item"><a href="Exercicios/ex12/index.html"class="item__link" target="_blank">Exercício 12</a></li>
-                <li class="item"><a href="Exercicios/ex13/index.html"class="item__link" target="_blank">Exercício 13</a></li>
-                <li class="item"><a href="Exercicios/ex14/index.html"class="item__link" target="_blank">Exercício 14</a></li>
-                <li class="item"><a href="Exercicios/ex15/cor01.html"class="item__link" target="_blank">Exercício 15</a></li>
-                <li class="item"><a href="Exercicios/ex16/fontes01.html"class="item__link" target="_blank">Exercício 16</a></li>
-                <li class="item"><a href="Exercicios/ex17/fonte01.html"class="item__link" target="_blank">Exercício 17</a></li>
-                <li class="item"><a href="Exercicios/ex18/seletores.html"class="item__link" target="_blank">Exercício 18</a></li>
-                <li class="item"><a href="Exercicios/ex19/index.html"class="item__link" target="_blank">Exercício 19</a></li>
-                <li class="item"><a href="Exercicios/ex20/bordas.html"class="item__link" target="_blank">Exercício 20</a></li>
-                <li class="item"><a href="Exercicios/ex21/fundo001.html"class="item__link" target="_blank">Exercício 21</a></li>
-                <li class="item"><a href="Exercicios/ex22/tabela01.html"class="item__link" target="_blank">Exercício 22</a></li>
-                <li class="item"><a href="Exercicios/ex23/tela01.html"class="item__link" target="_blank">Exercício 23</a></li>
-                <li class="item"><a href="Exercicios/ex24/form001.html"class="item__link" target="_blank">Exercício 24</a></li>
+            <ul class="secao__lista">
+                <li class="secao__item"><a href="Exercicios/ex01/index.html"class="secao__item__link" target="_blank">Exercício 01</a></li>
+                <li class="secao__item"><a href="Exercicios/ex02/index.html"class="secao__item__link" target="_blank">Exercício 02</a></li>
+                <li class="secao__item"><a href="Exercicios/ex03/index.html"class="secao__item__link" target="_blank">Exercício 03</a></li>
+                <li class="secao__item"><a href="Exercicios/ex04/index.html"class="secao__item__link" target="_blank">Exercício 04</a></li>
+                <li class="secao__item"><a href="Exercicios/ex05/index.html"class="secao__item__link" target="_blank">Exercício 05</a></li>
+                <li class="secao__item"><a href="Exercicios/ex06/index.html"class="secao__item__link" target="_blank">Exercício 06</a></li>
+                <li class="secao__item"><a href="Exercicios/ex07/index.html"class="secao__item__link" target="_blank">Exercício 07</a></li>
+                <li class="secao__item"><a href="Exercicios/ex08/index.html"class="secao__item__link" target="_blank">Exercício 08</a></li>
+                <li class="secao__item"><a href="Exercicios/ex09/index.html"class="secao__item__link" target="_blank">Exercício 09</a></li>
+                <li class="secao__item"><a href="Exercicios/ex10/index.html"class="secao__item__link" target="_blank">Exercício 10</a></li>
+                <li class="secao__item"><a href="Exercicios/ex11/index.html"class="secao__item__link" target="_blank">Exercício 11</a></li>
+                <li class="secao__item"><a href="Exercicios/ex12/index.html"class="secao__item__link" target="_blank">Exercício 12</a></li>
+                <li class="secao__item"><a href="Exercicios/ex13/index.html"class="secao__item__link" target="_blank">Exercício 13</a></li>
+                <li class="secao__item"><a href="Exercicios/ex14/index.html"class="secao__item__link" target="_blank">Exercício 14</a></li>
+                <li class="secao__item"><a href="Exercicios/ex15/cor01.html"class="secao__item__link" target="_blank">Exercício 15</a></li>
+                <li class="secao__item"><a href="Exercicios/ex16/fontes01.html"class="secao__item__link" target="_blank">Exercício 16</a></li>
+                <li class="secao__item"><a href="Exercicios/ex17/fonte01.html"class="secao__item__link" target="_blank">Exercício 17</a></li>
+                <li class="secao__item"><a href="Exercicios/ex18/seletores.html"class="secao__item__link" target="_blank">Exercício 18</a></li>
+                <li class="secao__item"><a href="Exercicios/ex19/index.html"class="secao__item__link" target="_blank">Exercício 19</a></li>
+                <li class="secao__item"><a href="Exercicios/ex20/bordas.html"class="secao__item__link" target="_blank">Exercício 20</a></li>
+                <li class="secao__item"><a href="Exercicios/ex21/fundo001.html"class="secao__item__link" target="_blank">Exercício 21</a></li>
+                <li class="secao__item"><a href="Exercicios/ex22/tabela01.html"class="secao__item__link" target="_blank">Exercício 22</a></li>
+                <li class="secao__item"><a href="Exercicios/ex23/tela01.html"class="secao__item__link" target="_blank">Exercício 23</a></li>
+                <li class="secao__item"><a href="Exercicios/ex24/form001.html"class="secao__item__link" target="_blank">Exercício 24</a></li>
             </ul>
-        </div> 
+        </section> 
     </main>
-    <footer id="rodape">
-        <p>Desenvolvido por <a href="" class="item__link">Maira Araújo</a></p>
-        <p>Rio de Janeiro | 2024</p>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por <a href="https://www.linkedin.com/in/maira-ara%C3%BAjo-4b8a391a4/" class="rodape_link">Maira Araújo</a></p>
+        <p class="rodape__texto">Rio de Janeiro | 2024</p>
     </footer>
 </body>
 </html>
