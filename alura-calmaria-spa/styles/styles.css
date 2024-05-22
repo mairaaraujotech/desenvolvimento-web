@@ -1,3 +1,8 @@
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,7 +32,34 @@ header nav ul li {
 }
 header nav ul a {
   text-decoration: none;
-  color: rgb(12, 4, 33);
-  font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+  font-weight: 500;
+}
+header #home {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #home .textos-home {
+  max-width: 464px;
+}
+header #home .textos-home h1 {
+  font-size: 42px;
+  color: #0C0421;
+  margin-bottom: 2rem;
+  font-family: "Krona One", sans-serif;
+}
+header #home .textos-home h1 span {
+  color: #4E75FF;
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
