@@ -1,6 +1,7 @@
 @use './abstract/variaveis';
 @use './abstract/mixins';
 @use 'nosso-espaco';
+@use 'servicos';
 
 body {
     margin: 0;
