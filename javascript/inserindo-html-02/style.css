@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --font-titulo: "Bebas Neue", sans-serif;
+}
+body {
+    line-height: 1.5;
+}
+
+.cabecalho {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #463730;
+    color: #FFFFFF;
+}
+
+.cabecalho__titulo {
+    font-family: var(--font-titulo);
+    margin: 0 10px;
+}
+
+.cabecalho__subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin: 0 10px;
+}
+
+.principal {
+    margin: 20px 30px;
+}
+
+.principal__titulo {
+    margin-bottom: 20px;
+    font-family: var(--font-titulo);
+}
+
+.principal__texto {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.principal__navegacao {
+    width: 75vw;
+    margin: auto;
+}
+
+.navegacao__item {
+    padding: 10px;
+    text-align: center;
+    background-color: #463730;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.principal__link {
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.principal__link:hover {
+    color: #EF6351;
+}
+
+.rodape {
+    background-color: #BFB48F;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid black;
+}
+
+.rodape__link {
+    color: #000000;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.rodape__link:hover {
+    color: #FFFFFF;
+}
