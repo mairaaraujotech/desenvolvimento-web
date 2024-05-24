@@ -2,6 +2,7 @@
 @use './abstract/mixins';
 @use 'nosso-espaco';
 @use 'servicos';
+@use 'desconto';
 
 body {
     margin: 0;
