@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px) {
+
+    /*body {
+        background-color: red;
+    }*/
+    .cabecalho {
+        padding: 40px 20px;
+        margin-bottom: 30px;
+    }
+    .curso {
+        margin: 70px 200px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+    /*body {
+        background-color: orangered;
+    }*/
+    .curso {
+        margin: 70px 300px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /*body {
+        background-color: olive;
+    }*/
+    .curso {
+        margin: 70px 400px;
+    }
+}

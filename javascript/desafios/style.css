@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: #3C4F76;
+    --cor-secundaria: #79ADDC;
+    --cor-terciaria: #FFFFFF;
+    --cor-quartenaria: #000000;
+    --cor-rodape: #D1BEB0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cabecalho {
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    text-align: center;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+}
+
+.cabecalho__titulo {
+    margin: 5px;
+    font-size: 2rem;
+}
+
+.cabecalho__subtitulo {
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.curso {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.curso__titulo {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.desafio {
+    border: solid 1px var(--cor-quartenaria);
+    border-radius: 10px;
+    width: 280px;
+    margin: 20px auto;
+    font-size: 1rem;
+}
+
+.link-container {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px 10px 0 0;
+}
+
+.desafio-link {
+    color: var(--cor-quartenaria);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 280px;
+    line-height: 3rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.desafio__descricao {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.link-container:hover {
+    background-color: var(--cor-principal);
+}
+
+.desafio-link:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+}
+
+.rodape {
+    background-color: var(--cor-rodape);
+    text-align: center;
+    padding: 10px;
+}
+
+.rodape__link {
+    color: var(--cor-quartenaria);
+    text-decoration: none;
+}
+
+.rodape__link:hover {
+    font-weight: 900;
+}
