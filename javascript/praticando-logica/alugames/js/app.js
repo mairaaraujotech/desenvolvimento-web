@@ -5,6 +5,7 @@ function alterarStatus(id) {
     let nomeJogo = gameClicado.querySelector('.dashboard__item__name');
 
     if(imagem.classList.contains('dashboard__item__img--rented')) {
+        confirm('Deseja mesmo devolver o jogo?')
         imagem.classList.remove('dashboard__item__img--rented');
         botao.classList.remove('dashboard__item__button--return');
         botao.textContent = 'Alugar';
