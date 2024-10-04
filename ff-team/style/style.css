@@ -27,16 +27,19 @@ body{
     font-size: 1.25rem;
     padding: 10px;
 }
-.menu-home{
+.menu-home,
+.container-titulo{
     font-size: 1.5rem;
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0;
 }
-.menu-home_link{
+.menu-home_link,
+.menu-home_span{
     text-decoration: none;
     color: black;
 }
-.menu-home_item{
+.menu-home_item,
+.titulo-paragrafo{
     margin: 20px 0;
 }
 .menu-home_link:hover{
@@ -51,6 +54,21 @@ body{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+}
+.container_botao-voltar{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+.botao-voltar{ 
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.botao-voltar:hover{
+    background-color: #1E2F23;
+    color: white;
 }
 .rodape {
     background-color: #768948;

@@ -1,0 +1,17 @@
+.container-principal{
+    height: 45vh;
+    text-align: center;
+}
+.contato-item{
+ margin: 30px 0;
+}
+.contato-item_link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.contato-item_link:hover{
+    background-color: #1E2F23;
+    color: white;
+    border-radius: 5px;
+}
