@@ -1,0 +1,17 @@
+.imagem{
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.nome{
+text-align: center;
+color: #1E2F23;
+font-size: 2rem;
+margin: 10px;
+}
+.depoimento{
+    text-align: center;
+    margin: 50px 10px;
+}

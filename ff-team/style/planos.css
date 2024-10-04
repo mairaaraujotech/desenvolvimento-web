@@ -1,0 +1,47 @@
+/*.plano{
+    display: block;
+    margin:  auto;
+}
+.container-plano{
+    height: 210px;
+    width: 150px;
+    text-align: center;
+}
+.plano-titulo{
+    height: 70px;
+    background-color: #1E2F23;
+    color: white;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    border: solid 1px #1E2F23;
+
+}
+.plano-valor{
+    height: 140px;
+    padding: 20px 0;
+    border: solid 5px #1E2F23;
+    background-color: #EAE2B7;
+    margin-bottom: 30px;
+    
+}*/
+
+.item {
+    width: 200px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.titulo{
+    padding: 30px;
+    background-color:#1E2F23;
+    color: white;
+    border-radius: 10px 10px 0 0 ;
+}
+.conteudo{
+    padding: 50px 30px;
+    border: solid 5px #1E2F23;
+}
+.nota{
+    text-align: center;
+}

@@ -33,8 +33,7 @@ body{
     text-align: center;
     margin: 40px 0;
 }
-.menu-home_link,
-.menu-home_span{
+.menu-home_link{
     text-decoration: none;
     color: black;
 }

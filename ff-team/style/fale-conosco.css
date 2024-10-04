@@ -1,3 +1,11 @@
+.container-titulo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 40px 0;
+}
+.titulo-paragrafo{
+    margin: 20px 0;
+}
 .container-principal{
     height: 45vh;
     text-align: center;
