@@ -1,18 +1,18 @@
 @media only screen and (min-width: 768px) {
 
     body {
-        background-color: red;
+        background-color: white;
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1399px) {
     body {
-        background-color: orangered;
+        background-color: white;
     }
 }
 
 @media only screen and (min-width: 1400px) {
     body {
-        background-color: olive;
+        background-color: white;
     }
 }
