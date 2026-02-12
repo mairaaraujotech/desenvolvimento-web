@@ -1,23 +1,20 @@
+/*colocar links para abrir em nova aba*/
+
 * {
     margin: 0;
     padding: 0;
 }
 :root {
-    --cor-principal: #F37748;
-    --cor-secundaria: #FFD166;
+    --cor-principal: #FFD166;
+    --cor-secundaria: #F37748;
     --cor-de-fundo: #F4F3EE;
     --cor-de-destaque: #000000;
     --cor-rodape-fundo: #CAC4CE;
     --cor-rodape-borda: #463F3A;
-
     --fonte-principal: 'Bebas Neue', 'Times New Roman', Times, serif;
     --fonte-secundaria: 'Quicksand', Arial, Helvetica, sans-serif;
     --fonte-destaque: Arial;
 }
-
-/* body{
-    font-family: var(--fonte-primaria);
-} */
 .cabecalho{
     text-align: center;
     margin-top: 30px;
@@ -33,32 +30,37 @@
     font-size: 1rem;
     padding: 5px;
 }
-.menu-home {
+.conteudo-principal{
     margin: 40px 0;
-    font-size: 1.3rem;
     text-align: center;
 }
-.menu-home_item {
+.container-lista{
+    font-size: 1rem; /*classe sem estilo aplicado*/
+}
+.lista-item{
     font-family: var(--fonte-secundaria);
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-principal);
     text-align: center;
     padding: 15px;
     margin: 2% 20%;
     border: solid 2px var(--cor-de-destaque);
     border-radius: 10px;
-    font-size: 0.5em;
 }
-.menu-home_link{
+.item-link,
+.video{
     text-decoration: none;
     color: black;
-    font-size: 1rem;
 }
-.menu-home_link:hover{
+.menu-home_link:hover,
+.video:hover{
     text-decoration: underline;
 }
-
+.container_video{
+    margin: 30px 0;
+}
 .video{
-    margin: 50px 0;
+    font-weight: bold;
+    text-decoration: underline;
 }
 .container_botao-voltar{
     text-align: center;
@@ -67,8 +69,8 @@
 }
 .botao-voltar{ 
     text-decoration: none;
-    background-color: var(--cor-secundaria);
     color: black;
+    background-color: var(--cor-secundaria);
     padding: 10px;
     border: solid 2px var(--cor-de-destaque);
     border-radius: 5px;
