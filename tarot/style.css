@@ -58,11 +58,12 @@
 .container-imagem{
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    width: 100%;           /* Ocupa a largura total */
+    width: 100%;             /* Ocupa a largura total */
 }
 .imagem{
     border: solid 2px gray;
     border-radius: 30px;
+    width: 300px;
 }
 .container-arcano{
     margin: 30px;
