@@ -70,10 +70,21 @@
 }
 .arcano-titulo{
     margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--cor-secundaria);
 }
 .arcano-texto{
     text-align: justify;
     text-indent: 30px;
+}
+.arcano-texto>p{
+    margin: 10px;
+    text-indent: 30px;
+}
+.texto-destaque{
+    color: var(--cor-secundaria);
+    font-weight: 900;
 }
 .container_botao-voltar{
     text-align: center;
