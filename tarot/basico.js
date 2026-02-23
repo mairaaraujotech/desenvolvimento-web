@@ -6,7 +6,7 @@ function exibirTexto(tag, texto) {
 exibirTexto('.cabecalho__titulo', 'TAROT');
 exibirTexto('.cabecalho__subtitulo', 'cartas que leem o destino');
 // botão de voltar
-exibirTexto('.botao-voltar', 'Voltar');
+exibirTexto('.botao-voltar', 'VOLTAR');
 // rodapé
 exibirTexto('.desenvolvedor', 'Desenvolvido por ');
 exibirTexto('.rodape__link', 'Maira Araújo');
