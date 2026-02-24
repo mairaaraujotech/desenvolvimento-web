@@ -1,80 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
 :root {
-    --fonte-primaria: "Afacad Flux", sans-serif;
+    /*Cores*/
+    --cor-01: #1C324D;
+    --cor-02: #184262;
+    --cor-03: #145277;
+    --cor-04: #49758D;
+    --cor-05: #7E98A2;
+    --cor-06: #000000;
+    --cor-07: #BFC0C0;
+    --cor-08: #FFFFFF;
+    /*Fontes*/
+    --fonte-01: "Afacad Flux", sans-serif;
+    --fonte-02: "Arial";
 }
-
 * {
     margin: 0;
     padding: 0;
 }
-
 body{
-    font-family: var(--fonte-primaria);
+    background-color: var(--cor-06);
 }
 .cabecalho{
+    font-family: var(--fonte-02);
+    background-color: var(--cor-08);
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding: 20px 0 0 0;
 }
 .cabecalho__titulo{
-    font-weight: 400;
-    font-size: 3rem;
+    font-weight: bold;
+    font-size: 3.5rem;
 }
 .cabecalho__subtitulo{
-    background-color: #1E2F23;
-    color: white;
-    font-size: 1.25rem;
+    background-color: var(--cor-01);
+    color: var(--cor-08);
+    font-size: 1.35rem;
     padding: 10px;
 }
-.menu-home,
-.container-titulo{
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 40px 0;
-}
-.menu-home_link{
-    text-decoration: none;
-    color: black;
-}
-.menu-home_item,
-.titulo-paragrafo{
+.conteudo-principal{
     margin: 20px 0;
 }
-.menu-home_link:hover{
-    text-decoration: underline;
-}
-.imagem-container{
+.container-imagem{
     margin: 20px;
 }
-.imagem-home {
+.imagem{
     display: block;
     margin: auto;
     height: 200px;
     width: 200px;
     border-radius: 50%;
 }
+.lista{
+    font-family: var(--fonte-01);
+    font-size: 1rem;
+    text-align: center;
+
+}
+.lista-item{
+    background-color: var(--cor-05);
+    border: solid 2px var(--cor-06);
+    border-radius: 20px;
+    color: var(--cor-08);
+    padding: 15px;
+    margin: 2% 20%;
+}
+.item-link{
+    color: var(--cor-08);
+    text-decoration: none;
+    margin: 20px 0;
+}
+.container-texto{
+    margin: 50px 30px;
+}
+.texto{
+    background-color: var(--cor-08);
+    text-indent: 40px;
+    text-align: justify;
+    font-family: var(--fonte-02);
+    font-size: 0.8rem;
+    padding: 20px;
+    margin: 10px 0;
+}
+.container-depoimento{
+    margin: 50px 0;
+}
+.depoimento-nome{
+text-align: center;
+color: var(--cor-08);
+font-size: 2rem;
+margin: 10px;
+}
+.depoimento-texto{
+    color: var(--cor-08);
+    text-align: center;
+    margin: 50px 30px;
+}
 .container_botao-voltar{
     text-align: center;
-    margin: 20px;
+    margin-bottom: 50px;
     padding: 10px;
 }
 .botao-voltar{ 
     text-decoration: none;
-    color: black;
+    background-color: var(--cor-05);
+    color: var(--cor-08);
     padding: 10px;
     border-radius: 5px;
 }
+.rodape{
+    background-color: var(--cor-08);
+    font-family: var(--fonte-02);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 20px 0;
+}
+.rodape__link,
+.git-hub__link{
+    color: var(--cor-06);
+    text-decoration: none;
+}
+/*Hovers*/
+.lista-item:hover{
+    background-color: var(--cor-04)
+}
+.item-link:hover,
+.botao-voltar:hover,
+.rodape__link:hover,
+.git-hub__link:hover{
+    text-decoration: underline;
+}
 .botao-voltar:hover{
-    background-color: #1E2F23;
+    background-color: var(--cor-04);
     color: white;
 }
-.rodape {
-    background-color: #768948;
+
+/*Fale Conosco*/
+.contato-item{
     text-align: center;
-    font-size: 1rem;
+    color: var(--cor-08);
+    font-family: var(--fonte-02);
+    margin: 60px 0;
 }
-.rodape__link {
-    color: black;
+.contato-item_link{
     text-decoration: none;
+    color: var(--cor-08);
+    padding: 10px;
+}
+.contato-item_link:hover{
+    background-color: F23;
+    color: white;
+    border-radius: 5px;
+}
+
+/*Nossos Planos*/
+
+.item {
+    width: 200px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.titulo{
+    padding: 30px;
+    background-color:var(--cor-05);
+    color: var(--cor-08);
+    border-radius: 10px 10px 0 0 ;
+}
+.conteudo{
+    color: var(--cor-08);
+    padding: 50px 30px;
+    border: solid 5px var(--cor-05);
+}
+.nota{
+    text-align: center;
 }

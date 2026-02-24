@@ -25,23 +25,3 @@
     
 }*/
 
-.item {
-    width: 200px;
-    margin-bottom: 20px;
-    margin: auto;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.titulo{
-    padding: 30px;
-    background-color:#1E2F23;
-    color: white;
-    border-radius: 10px 10px 0 0 ;
-}
-.conteudo{
-    padding: 50px 30px;
-    border: solid 5px #1E2F23;
-}
-.nota{
-    text-align: center;
-}
