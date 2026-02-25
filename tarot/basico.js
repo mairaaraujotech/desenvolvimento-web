@@ -3,13 +3,13 @@ function exibirTexto(tag, texto) {
     campo.innerHTML = texto;
 }
 // cabeçalho
-exibirTexto('.cabecalho__titulo', 'TAROT');
-exibirTexto('.cabecalho__subtitulo', 'cartas que leem o destino');
+exibirTexto('.cabecalho-titulo', 'TAROT');
+exibirTexto('.cabecalho-subtitulo', 'cartas que leem o destino');
 // botão de voltar
 exibirTexto('.botao-voltar', 'VOLTAR');
 // rodapé
-exibirTexto('.desenvolvedor', 'Desenvolvido por ');
-exibirTexto('.rodape__link', 'Maira Araújo');
-exibirTexto('.local-ano', 'Rio de Janeiro | 2026');
-exibirTexto('.hospedagem', 'Hospedado gratuitamente no ');
-exibirTexto('.git-hub__link', 'GitHub');
+exibirTexto('.rodape-desenvolvedor', 'Desenvolvido por ');
+exibirTexto('.rodape-desenvolvedor-link', 'Maira Araújo');
+exibirTexto('.rodape-local-ano', 'Rio de Janeiro | 2026');
+exibirTexto('.rodape-hospedagem', 'Hospedado gratuitamente no ');
+exibirTexto('.rodape-hospedagem-link', 'GitHub');
