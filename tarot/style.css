@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,29 +6,30 @@
 :root {
     /*Cores*/
     --cor-01: #2D1A00; /*Dark Coffee*/
-    --cor-02: #593400; /*Spicy Orange*/
+    --cor-02: #806237; /*Spicy Orange*/
     --cor-03: #D3A96E; /**/
     --cor-04: #F8EDE2; /*Linen*/
     --cor-05: #0C0C0C; /*Onyx*/
     --cor-06: #C1C1C1; /*Silver*/
     --cor-07: #FFFFFF; /*White*/
     /*Fontes*/
-    --fonte-principal: 'Times New Roman', Times, serif;
-    --fonte-secundaria: 'Arial';
+    --fonte-01: "Afacad Flux", sans-serif;
+    --fonte-02: 'Arial';
 }
+/*Corpo da Página*/
 .corpo{
     background-color: var(--cor-07);
 }
+/*Cabeçalho*/
 .cabecalho{
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-01);
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 .cabecalho-titulo{
     color: var(--cor-01);
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .cabecalho-subtitulo{
     background-color: var(--cor-01);
@@ -35,57 +37,30 @@
     font-size: 1rem;
     padding: 5px;
 }
+/*Main*/
 .conteudo-principal{
-    margin: 40px 0;
+    margin: 30px 0;
     text-align: center;
 }
-.container-imagem-home{
-    margin: 20px 0;
-}
-.imagem-home{
-    display: block;
-    margin: auto;
-    height: 340px;
-    width: 200px;
-}
+/*Listas de Páginas*/
 .container-lista{
-    font-size: 1rem; /*classe sem estilo aplicado*/
+    font-size: 1rem;
 }
 .lista-item{
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-01);
     background-color: var(--cor-03);
     text-align: center;
-    padding: 15px;
-    margin: 2% 20%;
-    border: solid 2px var(--cor-03);
+    padding: 10px;
+    margin: 1% 20%;
+    border: solid 2px var(--cor-02);
     border-radius: 10px;
 }
-.lista-item:hover{
-    background-color: var(--cor-02)
-}
-.item-link{
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: var(--cor-01);
-}
-.lista-item:hover .item-link{
-    color: var(--cor-07);
-}
-.container-imagem{
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%;             /* Ocupa a largura total */
-}
-.imagem,
-.imagem-home{
-    border: solid 2px var(--cor-02);
-    border-radius: 30px;
-}
+/*Arcanos*/
 .container-arcano{
     margin: 30px;
 }
 .arcano-titulo{
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-02);
     margin: 10px;
     font-size: 1.5rem;
     font-weight: 900;
@@ -100,19 +75,20 @@
     text-indent: 30px;
 }
 .texto-destaque{
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-02);
     color: var(--cor-03);
     font-weight: 900;
 }
+/*Botão Voltar*/
 .container-botao-voltar{
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
 }
 .botao-voltar{ 
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-01);
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-decoration: none;
     color: var(--cor-07);
     background-color: var(--cor-01);
@@ -120,21 +96,49 @@
     border: solid 2px var(--cor-01);
     border-radius: 20px;
 }
-.botao-voltar:hover{
-    background-color: var(--cor-03);
-    color: var(--cor-01);
-}
+/*Rodapé*/
 .rodape {
-    padding: 20px;
+    padding: 30px;
     background-color: var(--cor-06);
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-02);
     text-align: center;
     font-size: 0.8rem;
+}
+/*Imagens*/
+.container-imagem{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%;             /* Ocupa a largura total */
+    margin-bottom: 30px;
+}
+.imagem{
+    height: 340px;
+    width: 200px;
+    border: solid 2px var(--cor-02);
+    border-radius: 20px;
+}
+/*Links*/
+.item-link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-01);
+    text-transform: uppercase;
 }
 .rodape-desenvolvedor-link,
 .rodape-hospedagem-link {
     color: var(--cor-05);
     text-decoration: none;
+}
+/*Hovers*/
+.lista-item:hover{
+    background-color: var(--cor-02)
+}
+.lista-item:hover .item-link{
+    color: var(--cor-07);
+}
+.botao-voltar:hover{
+    background-color: var(--cor-07);
+    color: var(--cor-01);
 }
 .rodape-desenvolvedor-link:hover,
 .rodape-hospedagem-link:hover{
