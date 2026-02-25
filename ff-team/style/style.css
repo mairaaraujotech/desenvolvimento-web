@@ -2,11 +2,11 @@
 
 :root {
     /*Cores*/
-    --cor-01: #1C324D;
+    --cor-01: #EE2E31;
     --cor-02: #184262;
     --cor-03: #145277;
-    --cor-04: #49758D;
-    --cor-05: #7E98A2;
+    --cor-04: #F26264;
+    --cor-05: #EE2E31;
     --cor-06: #000000;
     --cor-07: #BFC0C0;
     --cor-08: #FFFFFF;
@@ -23,7 +23,8 @@ body{
 }
 .cabecalho{
     font-family: var(--fonte-02);
-    background-color: var(--cor-08);
+    background-color: var(--cor-01);
+    color: var(--cor-08);
     text-align: center;
     padding: 20px 0 0 0;
 }
@@ -35,7 +36,7 @@ body{
     background-color: var(--cor-01);
     color: var(--cor-08);
     font-size: 1.35rem;
-    padding: 10px;
+    padding: 0 0 10px 0;
 }
 .conteudo-principal{
     margin: 20px 0;
