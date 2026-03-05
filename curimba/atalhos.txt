@@ -1,2 +1,0 @@
-criar comentário / desfazer comentário
-alt + shift + a

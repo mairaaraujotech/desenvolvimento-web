@@ -3,13 +3,13 @@ function exibirTexto(tag, texto) {
     campo.innerHTML = texto;
 }
 // cabeçalho
-exibirTexto('.cabecalho__titulo', 'Curimba');
-exibirTexto('.cabecalho__subtitulo', 'bate tambor');
+exibirTexto('#cabecalho__titulo', 'Curimba');
+exibirTexto('#cabecalho__subtitulo', 'bate tambor');
 // botão de voltar
-exibirTexto('.botao-voltar', 'Voltar');
+exibirTexto('#botao-voltar', '<<<');
 // rodapé
 exibirTexto('.desenvolvedor', 'Desenvolvido por ');
-exibirTexto('.rodape__link', 'Maira Araújo');
+exibirTexto('#autor', 'Maira Araújo');
 exibirTexto('.local-ano', 'Rio de Janeiro | 2026');
 exibirTexto('.hospedagem', 'Hospedado gratuitamente no ');
-exibirTexto('.git-hub__link', 'GitHub');
+exibirTexto('#github', 'GitHub');
