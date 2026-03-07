@@ -25,11 +25,11 @@
 }
 #cabecalho__titulo{
     font-weight: bold;
-    font-size: 3rem;
-    text-transform: uppercase;
+    font-size: 2.4rem;
 }
 #cabecalho__subtitulo{
-    font-size: 1.5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
     background-color: var(--cor-01);
     color: var(--cor-06);
     padding: 10px;
@@ -89,14 +89,16 @@
     font-weight: bold;
     text-decoration: none;
     color: var(--cor-06);
+    padding: 10px 0;
 }
 #botao-voltar{
     font-family: var(--fonte-02);
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-decoration: none;
     background-color: var(--cor-03);
     color: var(--cor-06);
-    padding: 10px;
+    padding:10px;
     border: solid 0px var(--cor-01);
     border-radius: 50%;
 }
@@ -108,9 +110,6 @@
 .lista-item:hover{
     background-color: var(--cor-02);
 }
-.lista-item:hover .item-link{
-    text-decoration: underline;
-}
 #botao-voltar:hover{
     background-color: var(--cor-02);
     border: solid 0px var(--cor-01);
@@ -120,7 +119,5 @@
 }
 
 /*FALTA
-- COLOCAR LINK DE VOLTAR PARA PÁGINA DA CURIMBA
-- CRIAR PÁGINA EM CONSTRUÇÃO COM LINK DE VOLTAR
 - RESPONSIVIDADE
 */

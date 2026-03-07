@@ -3,10 +3,10 @@ function exibirTexto(tag, texto) {
     campo.innerHTML = texto;
 }
 // cabeçalho
-exibirTexto('#cabecalho__titulo', 'Curimba');
-exibirTexto('#cabecalho__subtitulo', 'bate tambor');
+exibirTexto('#cabecalho__titulo', 'caderno de');
+exibirTexto('#cabecalho__subtitulo', 'pontos');
 // botão de voltar
-exibirTexto('#botao-voltar', '<<<');
+exibirTexto('#botao-voltar', '❰❰❰');
 // rodapé
 exibirTexto('.desenvolvedor', 'Desenvolvido por ');
 exibirTexto('#autor', 'Maira Araújo');
