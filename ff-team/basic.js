@@ -4,7 +4,7 @@ function exibirTexto(tag, texto) {
 }
 exibirTexto('.cabecalho__titulo', 'FFteam');
 exibirTexto('.cabecalho__subtitulo', 'Consultoria Esportiva');
-exibirTexto('.botao-voltar', 'Voltar');
+exibirTexto('.botao-voltar', '❰❰❰');
 exibirTexto('.desenvolvedor', 'Desenvolvido por ');
 exibirTexto('.rodape__link', 'Maira Araújo');
 exibirTexto('.hospedagem', 'Hospedado gratuitamente no ');
