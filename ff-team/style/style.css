@@ -2,11 +2,6 @@
 
 :root {
     /*Cores*/
-    --cor-01: #EE2E31;
-    --cor-02: #184262;
-    --cor-03: #145277;
-    --cor-04: #F26264;
-    --cor-05: #EE2E31;
     --cor-06: #000000;
     --cor-07: #909090;
     --cor-08: #FFFFFF;
@@ -20,26 +15,31 @@
 }
 body{
     font-family: var(--fonte-01);
-    background-color: var(--cor-06);
+    color: var(--cor-06);
+    background-color: var(--cor-08);
 }
 .cabecalho{
     background-color: var(--cor-01);
-    color: var(--cor-08);
+    color: var(--cor-06);
     text-align: center;
     padding: 20px 0 20px 0;
     margin-bottom: 10vh;
 }
-.cabecalho__titulo{
-    font-weight: bold;
-    font-size: 4rem;
+.container-imagem-home{
+    display: flex;
+    justify-content: center;
+}
+.imagem-home{
+    height: 150px;
+    width: 150px;
 }
 .cabecalho__subtitulo{
     background-color: var(--cor-01);
-    color: var(--cor-08);
+    color: var(--cor-06);
     font-size: 1.35rem;
 }
 .conteudo-principal{
-    margin: 20px 0;
+    margin-bottom: 10vh;
 }
 .container-imagem{
     margin-bottom: 10vh;
@@ -60,12 +60,12 @@ body{
     background-color: var(--cor-05);
     border: solid 2px var(--cor-06);
     border-radius: 20px;
-    color: var(--cor-08);
+    color: var(--cor-06);
     padding: 15px;
     margin: 2% 20%;
 }
 .item-link{
-    color: var(--cor-08);
+    color: var(--cor-06);
     text-decoration: none;
     margin: 20px 0;
 }
@@ -77,14 +77,14 @@ body{
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding-bottom: 1rem;
-    color: var(--cor-08);
+    color: var(--cor-06);
 }
 .container-depoimento{
     text-align: center;
     margin: 50px 30px;
 }
 .depoimento{
-    color: var(--cor-08);
+    color: var(--cor-06);
 }
 .depoimento-nome{
     font-size: 2rem;
@@ -94,7 +94,7 @@ body{
 .depoimento-texto{
     font-size: 1.2rem;
     line-height: 1.5rem;
-    color: var(--cor-08);
+    color: var(--cor-06);
 }
 .container_botao-voltar{
     text-align: center;
@@ -103,21 +103,22 @@ body{
 }
 .botao-voltar{ 
     text-decoration: none;
-    background-color: var(--cor-05);
-    color: var(--cor-08);
+    background-color: var(--cor-07);
+    color: var(--cor-06);
     padding: 10px;
     border-radius: 5px;
 }
 .rodape{
-    background-color: var(--cor-08);
+    color: var(--cor-08);
+    background-color: var(--cor-06);
     font-family: var(--fonte-02);
     text-align: center;
     font-size: 0.8rem;
-    padding: 20px 0;
+    padding: 10vh 0;
 }
 .rodape__link,
 .git-hub__link{
-    color: var(--cor-06);
+    color: var(--cor-08);
     text-decoration: none;
 }
 /*Hovers*/
@@ -130,7 +131,7 @@ body{
     text-decoration: underline;
 }
 .botao-voltar:hover{
-    background-color: var(--cor-04);
+    background-color: var(--cor-06);
     color: var(--cor-08);
 }
 
@@ -140,11 +141,11 @@ body{
 }
 .contato-item_link{
     text-decoration: none;
-    color: var(--cor-08);
+    color: var(--cor-06);
 }
 .contato-item_link:hover{
     background-color: F23;
-    color: var(--cor-08);
+    color: var(--cor-06);
     border-radius: 5px;
 }
 
@@ -158,26 +159,26 @@ body{
 }
 .titulo{
     padding: 30px;
-    background-color:var(--cor-05);
+    background-color:var(--cor-06);
     color: var(--cor-08);
     border-radius: 10px 10px 0 0 ;
 }
 .valor{
-    color: var(--cor-08);
+    color: var(--cor-06);
     padding: 50px 30px;
-    border: solid 5px var(--cor-05);
+    border: solid 5px var(--cor-06);
 }
 .planos-introducao{
     text-align: justify;
     line-height: 1.5rem;
-    color: var(--cor-08);
+    color: var(--cor-06);
     border-left: 2px solid var(--cor-01);
     border-right: 2px solid var(--cor-01);
     padding: 30px;
     margin: 70px;
 }
 .plano-descricao{
-    color: var(--cor-08);
+    color: var(--cor-06);
     padding: 10px 0;
 }
 .nota{
@@ -186,9 +187,9 @@ body{
 .texto{
     text-align: justify;
     line-height: 1.5rem;
-    color: var(--cor-08);
-    border-left: 2px solid var(--cor-01);
-    border-right: 2px solid var(--cor-01);
+    color: var(--cor-06);
+    border-left: 2px solid var(--cor-06);
+    border-right: 2px solid var(--cor-06);
     border-radius: 5%;
     padding: 30px;
     margin: 70px;
