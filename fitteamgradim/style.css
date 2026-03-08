@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+:root {
+    /*Cores*/
+    --cor-06: #000000;
+    --cor-07: #909090;
+    --cor-08: #FFFFFF;
+    /*Fontes*/
+    --fonte-01: "Afacad Flux", sans-serif;
+    --fonte-02: "Arial";
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--fonte-01);
+    color: var(--cor-06);
+    background-color: var(--cor-08);
+}
+/*Cabeçalho*/
+#cabecalho{
+    background-color: var(--cor-01);
+    color: var(--cor-06);
+    text-align: center;
+}
+#container-imagem-home{
+    display: flex;
+    justify-content: center;
+}
+#imagem-home{
+    height: 150px;
+    width: 150px;
+}
+#cabecalho-subtitulo{
+    background-color: var(--cor-06);
+    padding-bottom: 20px;
+}
+/*Conteúdo Principal*/
+#conteudo-principal{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+#lista{
+    font-size: 1rem;
+    text-align: center;
+}
+.lista-item{
+    background-color: var(--cor-05);
+    border: solid 2px var(--cor-06);
+    border-radius: 20px;
+    color: var(--cor-06);
+    padding: 15px;
+    margin: 2% 20%;
+}
+/*Botão Voltar*/
+#container_botao-voltar{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+#botao-voltar{ 
+    text-decoration: none;
+    background-color: var(--cor-07);
+    color: var(--cor-06);
+    padding: 10px;
+    border-radius: 5px;
+}
+/*Rodapé*/
+#rodape{
+    color: var(--cor-08);
+    background-color: var(--cor-06);
+    font-family: var(--fonte-02);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10vh 0;
+}
+/*Links*/
+.item-link{
+    color: var(--cor-06);
+    text-decoration: none;
+    margin: 20px 0;
+}
+#desenvolvedor-link,
+#github-link{
+    color: var(--cor-08);
+    text-decoration: none;
+}
+/*Hovers*/
+.lista-item:hover{
+    background-color: var(--cor-04)
+}
+.item-link:hover,
+#desenvolvedor-link,
+#github-link{
+    text-decoration: underline;
+}
+#botao-voltar:hover{
+    background-color: var(--cor-06);
+    color: var(--cor-08);
+}
+
+/*Fale Conosco*/
+.contato-item{
+    text-align: center;
+}
+.contato-item_link{
+    text-decoration: none;
+    color: var(--cor-06);
+}
+.contato-item_link:hover{
+    background-color: F23;
+    color: var(--cor-06);
+    border-radius: 5px;
+}
+
+/*Nossos Planos*/
+.item {
+    width: 200px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.titulo{
+    padding: 30px;
+    background-color:var(--cor-06);
+    color: var(--cor-08);
+    border-radius: 10px 10px 0 0 ;
+}
+.valor{
+    color: var(--cor-06);
+    padding: 50px 30px;
+    border: solid 5px var(--cor-06);
+}
+.planos-introducao{
+    text-align: justify;
+    line-height: 1.5rem;
+    color: var(--cor-06);
+    border-left: 2px solid var(--cor-01);
+    border-right: 2px solid var(--cor-01);
+    padding: 30px;
+    margin: 70px;
+}
+.plano-descricao{
+    color: var(--cor-06);
+    padding: 10px 0;
+}
+.nota{
+    text-align: center;
+}
+.texto{
+    text-align: justify;
+    line-height: 1.5rem;
+    color: var(--cor-06);
+    border-left: 2px solid var(--cor-06);
+    border-right: 2px solid var(--cor-06);
+    border-radius: 5%;
+    padding: 30px;
+    margin: 70px;
+}
+.texto > p{
+    margin: 15px;
+}
