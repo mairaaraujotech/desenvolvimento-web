@@ -38,8 +38,7 @@ body{
 }
 /*Conteúdo Principal*/
 #conteudo-principal{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin: 10vh 5vh;
 }
 #lista{
     font-size: 1rem;
@@ -47,16 +46,16 @@ body{
 }
 .lista-item{
     background-color: var(--cor-05);
+    color: var(--cor-06);
     border: solid 2px var(--cor-06);
     border-radius: 20px;
-    color: var(--cor-06);
     padding: 15px;
     margin: 2% 20%;
 }
 /*Botão Voltar*/
 #container_botao-voltar{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
     padding: 10px;
 }
 #botao-voltar{ 
@@ -91,29 +90,44 @@ body{
     background-color: var(--cor-04)
 }
 .item-link:hover,
-#desenvolvedor-link,
-#github-link{
+#desenvolvedor-link:hover,
+#github-link:hover{
     text-decoration: underline;
 }
 #botao-voltar:hover{
     background-color: var(--cor-06);
     color: var(--cor-08);
 }
-
-/*Fale Conosco*/
-.contato-item{
+/*Quem Somos*/
+.container-imagem{
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0;
+}
+.imagem{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.texto{
+    border-left: 2px solid var(--cor-06);
+    border-right: 2px solid var(--cor-06);
+    border-radius: 5%;
+    margin: 10vh 0;
+    padding: 5vh;
+}
+.texto > p{
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    color: var(--cor-06);
+    padding-bottom: 1.5rem;
+}
+/*Depoimentos*/
+.depoimento-nome{
+    font-size: 1.5rem;
     text-align: center;
 }
-.contato-item_link{
-    text-decoration: none;
-    color: var(--cor-06);
-}
-.contato-item_link:hover{
-    background-color: F23;
-    color: var(--cor-06);
-    border-radius: 5px;
-}
-
 /*Nossos Planos*/
 .item {
     width: 200px;
@@ -149,31 +163,16 @@ body{
 .nota{
     text-align: center;
 }
-.texto{
-    text-align: justify;
-    line-height: 1.5rem;
-    color: var(--cor-06);
-    border-left: 2px solid var(--cor-06);
-    border-right: 2px solid var(--cor-06);
-    border-radius: 5%;
-    padding: 30px;
-    margin: 70px;
-}
-.texto > p{
-    margin: 15px;
-}
-/*Depoimentos*/
-.depoimento-nome{
-    font-size: 1.5rem;
+/*Fale Conosco*/
+.contato-item{
     text-align: center;
-    padding-top: 50px;
 }
-.container-imagem{
-    display: flex;
-    justify-content: center;
+.contato-item_link{
+    text-decoration: none;
+    color: var(--cor-06);
 }
-.imagem{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+.contato-item_link:hover{
+    background-color: F23;
+    color: var(--cor-06);
+    border-radius: 5px;
 }
