@@ -162,3 +162,18 @@ body{
 .texto > p{
     margin: 15px;
 }
+/*Depoimentos*/
+.depoimento-nome{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 50px;
+}
+.container-imagem{
+    display: flex;
+    justify-content: center;
+}
+.imagem{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}

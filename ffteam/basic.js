@@ -19,5 +19,3 @@ function exibirImagem(seletor, caminho, descricao) {
     let elemento = document.querySelector(seletor);
     elemento.innerHTML = `<img src="${caminho}" alt="${descricao}">`;
 }
-
-// Como usar:

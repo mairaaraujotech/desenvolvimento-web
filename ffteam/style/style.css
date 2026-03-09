@@ -197,3 +197,24 @@ body{
 .texto > p{
     margin: 15px;
 }
+
+/*Responsividade*/
+/*
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: white;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+    body {
+        background-color: white;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        background-color: white;
+    }
+}*/

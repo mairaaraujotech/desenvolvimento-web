@@ -6,7 +6,7 @@ function exibirImagem(tag, imagem){
     let campo = document.querySelector(seletor);
     elemento.innerHTML = `<img src="${caminho}" alt="${descricao}">`;
 }
-exibirImagem('#imagem-home', 'home.png', 'Logo FFteam');
+exibirImagem('#imagem-home', '../img/home.png', 'Logo FFteam');
 exibirTexto('#botao-voltar', '❰❰❰');
 exibirTexto('#desenvolvedor', 'Desenvolvido por ');
 exibirTexto('#desenvolvedor-link', 'Maira Araújo');
