@@ -8,30 +8,30 @@
 </head>
 <body id="corpo">
     <header id="cabecalho">
-        <section id="cabecalho__titulo">HTML | CSS</section>
-        <section id="cabecalho__subtitulo">guia prático</section>
+        <div id="cabecalho-titulo"></div>
+        <div id="cabecalho-subtitulo"></div>
     </header>
     <main id="principal">
-        <section class="container-imagem"><img class="imagem" src="html-css.webp" alt=""></section>
-        <section class="container-texto">
+        <div class="container-texto">
             <p>O objetivo deste site é organizar o conhecimento adiquirido nos estudos de HTML e CSS, de modo que todo o material estudado possa ser recuperado e utilizado com rapidez e facilidade.</p>
             <p>Como utilizar este recurso: os assunto são separados por páginas. Para usar determinado recurso, basta ir para a página desejada e consultar o código correspondente.</p>
             <p>Em relação aos comentários, eles serão o mínimo repetitivos possível. Ou seja, em cada tópico, só haverá comentário em relação aos códigos referentes ao assunto específico abordado.</p>
             <p>Foi necessário tratar os dois assuntos, HTML e CSS, em um mesmo espaço, devido à ligação extrema que eles possuem, fazendo com que a sua separação cause mais prejuízos do que benefícios.</p>
-        </section>
-        <section id="container-lista">
-            <div class="lista-item"><a class="item-link" href=""></a></div>
-            <div class="lista-item"><a class="item-link" href="">FlexBox</a></div>
+        </div>
+        <div id="container-lista">
+            <div class="lista-item"><a class="item-link" href="pag/flexboxguide/index.html">FlexBox</a></div>
             <div class="lista-item"><a class="item-link" href="">Grid</a></div>
             <div class="lista-item"><a class="item-link" href="">Responsividade</a></div>
             <div class="lista-item"><a class="item-link" href="">SEO</a></div>
             <div class="lista-item"><a class="item-link" href="">Formulários</a></div>
-        </section>
+        </div>
+        <div id="container-botao-voltar"><a style="display: none;" id="botao-voltar" href=""></a></div>
     </main>
-    <footer id="rodape">
-        <p class="rodape__paragrafo">Desenvolvido por <a class="rodape__link" href="">Maira Araújo</a></p>
-        <p class="rodape__paragrafo">Hospedado gratuitamente no <a class="rodape__link" href="">GitHub</a></p>
-        <p class="rodape__paragrafo">Rio de Janeiro | 2026</p>
+   <footer id="rodape">
+        <p><span id="desenvolvedor"></span><a id="desenvolvedor-link" class="rodape-link" target="_blank" href="https://www.linkedin.com/in/maira-araujo-4b8a391a4/"></a></p>
+        <p><span id="hospedagem"></span><a id="github-link" class="rodape-link" href=""></a></p>
+        <p id="local-ano"></p>
     </footer>
+    <script src="basic.js"></script>
 </body>
 </html>

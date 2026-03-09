@@ -12,68 +12,85 @@
     --cor-06: #FFFFFF;
     --fonte-01: "Courier New";
     --fonte-02: "Arial";
-    --tamanho-01: 3rem;
-    --tamanho-02: 1.5rem;
-    --tamanho-03: 1.2rem;
-    --tamanho-04: 1rem;
-    --tamanho-05: 0.8rem;
-    --distancia-01: 0;
-    --distancia-02: 20vh;
-    --distancia-03: 5vh;
-    --distancia-04: 3vh;
-}
-#corpo{
-    color: var(--cor-05);
 }
 #cabecalho{
     font-family: var(--fonte-01);
     color: var(--cor-04);
     text-align: center;
-    margin: var(--distancia-02) var(--distancia-01);
+    margin: 20vh 0;
 }
-#cabecalho__titulo{
+#cabecalho-titulo{
     background-color: var(--cor-06);
-    font-size: var(--tamanho-01);
+    font-size: 1.5rem;
     font-weight: bolder;
     text-transform: uppercase;
 }
-#cabecalho__subtitulo{
+#cabecalho-subtitulo{
     background-color: var(--cor-03);
-    font-size: var(--tamanho-02);
+    font-size: 1.5rem;
 }
 #principal{
     font-family: var(--fonte-02);
-    font-size: var(--tamanho-04);
+    font-size: 1rem;
     text-align: justify;
     color: var(--cor-04);
     background-color: var(--cor-06);
-    margin: var(--distancia-01) var(--distancia-03) var(--distancia-03);
+    margin: 0 5vh 5vh;
 }
 .container-texto p{
-    line-height: var(--tamanho-02);
-    margin-bottom: var(--tamanho-04);
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
-.container-imagem{
-    display: flex;
-    justify-content: center;
+#container-lista{
+    text-align: center;
+    margin: 50px 40px 0 40px;
 }
-.imagem{
-    height: 295px;
-    width: 295px;
-    margin-bottom:  var(--distancia-02);
+.lista-item{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background-color: var(--cor-01);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+#container-botao-voltar{
+    margin: 50px 0;
+    text-align: center;
 }
 #rodape{
     background-color: var(--cor-05);
-    font-family: var(--fonte-02);
-    font-size: var(--tamanho-05);
-    text-align: center;
-    padding: var(--distancia-03);
-}
-.rodape__paragrafo{
     color: var(--cor-06);
-    line-height: var(--tamanho-03);
+    font-family: var(--fonte-02);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5vh;
 }
-.rodape__link{
+/*LINKS*/
+.item-link{
+    text-decoration: none;
+    color: var(--cor-06);
+    padding: 10px;
+}
+#botao-voltar{
+    text-decoration: none;
+    background-color: var(--cor-02);
+    color: var(--cor-06);
+    border-radius: 25%;
+    padding: 10px;
+}
+#desenvolvedor-link,
+#github-link{
     color: var(--cor-06);
     text-decoration: none;
+}
+/*HOVERS*/
+.lista-item:hover{
+    background-color: var(--cor-02);
+}
+#botao-voltar:hover{
+    background-color: var(--cor-01);
+}
+#desenvolvedor-link:hover,
+#github-link:hover{
+    text-decoration: underline;
 }

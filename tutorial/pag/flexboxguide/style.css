@@ -8,13 +8,13 @@
 
 :root {
     --cor-de-fundo: #FFFFFF;
-    --cor-de-topico: #F9FBF2;
+    --cor-de-topico: #F1F7ED;
     --cor-de-container: #344966;
-    --cor-de-item: #EC7357;
-    --cor-codigo-seletor: #BC8034;
-    --cor-codigo-atributo: #63B0CD;
+    --cor-de-item: #ED6A5A;
+    --cor-codigo-seletor: #EDAE49;
+    --cor-codigo-atributo: #01BAEF ;
     --cor-de-fundo-rodape: #ECEBE4;
-    --cor-codigo-valor: #57A773;
+    --cor-codigo-valor: #EE874F;
     --fonte-principal: 'Roboto', Arial, Helvetica, sans-serif;
     --fonte-secundaria:'Courier New', Courier, monospace;
 }
@@ -28,12 +28,10 @@ body {
     font-size: 24px;
 }
 .topico {
-    background-color: var(--cor-de-topico);
-    width: 90%;
-    margin: 0 auto 20px auto;
+    margin: auto;
+    margin-bottom: 30px;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px darkgray;
+
 }
 .rodape {
     background-color: var(--cor-de-fundo-rodape);

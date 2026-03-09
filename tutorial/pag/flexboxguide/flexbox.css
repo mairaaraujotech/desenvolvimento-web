@@ -1,8 +1,8 @@
 .container {
     background-color: var(--cor-de-container);
-    margin: 20px auto;
-    width: 90%;
-    border: solid 2px black;
+    margin:  auto;
+    border: solid 1px black;
+    /*FlexBox*/
     display: flex;
 }
 #container-01 {
@@ -63,7 +63,7 @@ align-items: flex-start;
 }
 .container__item-estilo {
     background-color: var(--cor-de-item);
-    border: solid 2px black;
+    border: solid 1px black;
     border-radius: 5px;
     margin: 10px 0;
 }

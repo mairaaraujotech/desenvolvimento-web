@@ -1,27 +1,24 @@
 .topico__titulo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    text-align: center;
     letter-spacing: 3px;
-    margin: 20px auto;
-    width: 90%;
 }
 .topico__codigo {
+    font-size: 0.8rem;
     font-family: var(--fonte-secundaria);
     font-weight: bold;
-    font-size: 0.8em;
-    background-color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 20px auto;
-    width: 90%;
+    background-color: #37371F;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 .topico__codigo__seletor {
     color: var(--cor-codigo-seletor);
-    padding-left: 20px;
+    padding: 0 10px;
 }
 .topico__codigo__atributo {
     color: var(--cor-codigo-atributo);
-    padding: 0 0 0 50px;
+    padding: 0 0 0 20px;
 }
 .topico__codigo__valor {
     color: var(--cor-codigo-valor);
@@ -32,7 +29,7 @@
     margin: 20px auto;
     width: 90%;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .topico__codigo {
         font-weight: normal;
         font-size: 0.6em;
@@ -46,4 +43,4 @@
     .codigo__nota {
         font-size: 0.6em;
     }
-}
+}*/
