@@ -1,137 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Flexbox Guide</title>
-    </head>
-    <body>
-        <header id="cabecalho">
-            <h1 id="cabecalho__titulo">Guia Prático Flexbox</h1>
-            <div id="cabecalho__texto"> Tutorial para configurar uma página HTML com Flexbox</div>
-        </header>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 01</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resposivity.css">
+    <title>Flexbox Guide</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1 id="cabecalho__titulo">Guia Prático Flexbox</h1>
+        <p id="cabecalho__texto"> Configurando HTML com Flexbox</p>
+    </header>
+    <main>
+        <div id="justify-content">
+            <p class="titulo-bloco">Justify-Content</p>
+            <div class="topico">
+                <h2 class="topico__titulo">FLEX-START</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">justify-content: </span>
+                        <span class="topico__codigo__valor">flex-start;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">justify-content: </span>
-                    <span class="topico__codigo__valor">flex-start;</span>
+                <div class="container-output" id="container-output-01">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
                 </div>
-                <div class="topico__codigo__seletor">}</div>
             </div>
-            <div class="container" id="container-01">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
+            <div class="topico">
+                <h2 class="topico__titulo">FLEX-END</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">justify-content: </span>
+                        <span class="topico__codigo__valor">flex-end;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-02">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">CENTER</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">justify-content: </span>
+                        <span class="topico__codigo__valor">center;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-03">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">SPACE-BETWEEN</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">justify-content: </span>
+                        <span class="topico__codigo__valor">space-between;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-04">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">SPACE-AROUND</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">justify-content: </span>
+                        <span class="topico__codigo__valor">space-around;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-05">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">SPACE-EVENLY</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">justify-content: </span>
+                        <span class="topico__codigo__valor">space-evenly;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-06">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                </div>
             </div>
         </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 02</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span></div>
-                <div>
-                    <span class="topico__codigo__atributo">justify-content: </span>
-                    <span class="topico__codigo__valor">flex-end;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container" id="container-02">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 03</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">justify-content: </span>
-                    <span class="topico__codigo__valor">center;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container" id="container-03">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 04</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">justify-content: </span>
-                    <span class="topico__codigo__valor">space-between;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container" id="container-04">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 05</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">justify-content: </span>
-                    <span class="topico__codigo__valor">space-around;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container" id="container-05">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 06</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">justify-content: </span>
-                    <span class="topico__codigo__valor">space-evenly;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container" id="container-06">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-            </div>
-        </div>
-        <div class="topico">
-                <h2 class="topico__titulo">Tópico 07</h2>
+        <div id="align-items">
+            <p class="titulo-bloco">Align-Items</p>
+            <div class="topico">
+                <h2 class="topico__titulo">FLEX-START</h2>
                 <div class="topico__codigo">
                     <div class="topico__codigo__seletor">.container {</div>
                     <div>
@@ -144,278 +154,283 @@
                     </div>
                     <div class="topico__codigo__seletor">}</div>
                 </div>
-            <div class="container" id="container-07">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height-p"></div>
-                <div class="container__item-estilo container__item-width container__item-height-m"></div>
+                <div class="container-output" id="container-output-07">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height-p"></div>
+                    <div class="output-item-estilo output-item-width output-item-height-m"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">FLEX-END</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-items: </span>
+                        <span class="topico__codigo__valor">flex-end;;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-08">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height-p"></div>
+                    <div class="output-item-estilo output-item-width output-item-height-m"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">CENTER</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-items: </span>
+                        <span class="topico__codigo__valor">center;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-09">
+                    <div class="output-item-estilo output-item-width output-item-height"></div>
+                    <div class="output-item-estilo output-item-width output-item-height-p"></div>
+                    <div class="output-item-estilo output-item-width output-item-height-m"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">STRETCH</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-items: </span>
+                        <span class="topico__codigo__valor">stretch;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-10">
+                    <div class="output-item-estilo output-item-width"></div>
+                    <div class="output-item-estilo output-item-width"></div>
+                    <div class="output-item-estilo output-item-width"></div>
+                </div>
+            </div>
+            <div class="topico">
+                <h2 class="topico__titulo">BASELINE</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-items: </span>
+                        <span class="topico__codigo__valor">baseline;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output" id="container-output-11">
+                    <div class="output-item-estilo output-item-width output-item-height">
+                        <p class="container__item__texto">Texto</p>
+                        <hr>
+                    </div>
+                    <div class="output-item-estilo output-item-width output-item-height-p">
+                        <p class="container__item__texto">Texto</p>
+                        <hr>
+                    </div>
+                    <div class="output-item-estilo output-item-width output-item-height-m">
+                        <p class="container__item__texto">Texto</p>
+                        <hr>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 08</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
+        <div id="align-content">
+            <p class="titulo-bloco">Align-Content</p>
+            <div class="topico">
+                <h2 class="topico__titulo">FLEX-START</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">flex-wrap: </span>
+                        <span class="topico__codigo__valor">wrap;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-content: </span>
+                        <span class="topico__codigo__valor">flex-start;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-items: </span>
-                    <span class="topico__codigo__valor">flex-end;;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container" id="container-08">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height-p"></div>
-                <div class="container__item-estilo container__item-width container__item-height-m"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 09</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-items: </span>
-                    <span class="topico__codigo__valor">center;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container" id="container-09">
-                <div class="container__item-estilo container__item-width container__item-height"></div>
-                <div class="container__item-estilo container__item-width container__item-height-p"></div>
-                <div class="container__item-estilo container__item-width container__item-height-m"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 10</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-items: </span>
-                    <span class="topico__codigo__valor">stretch;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="codigo__nota">A altura dos itens irá ocupar a mesma altura do container. Não foi defidinido um height para os itens.</div>
-            <div class="container" id="container-10">
-                <div class="container__item-estilo container__item-width"></div>
-                <div class="container__item-estilo container__item-width"></div>
-                <div class="container__item-estilo container__item-width"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 11</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-items: </span>
-                    <span class="topico__codigo__valor">baseline;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="codigo__nota">Os itens são alinhados de acordo a base da linha do texto.</div>
-            <div class="container" id="container-11">
-                <div class="container__item-estilo container__item-width container__item-height">
-                    <p class="container__item__texto">Texto</p><hr>
-                </div>
-                <div class="container__item-estilo container__item-width container__item-height-p">
-                    <p class="container__item__texto">Texto</p><hr>
-                </div>
-                <div class="container__item-estilo container__item-width container__item-height-m">
-                    <p class="container__item__texto">Texto</p><hr>
+                <div class="container-output container-output-flex-wrap" id="container-output-12">
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
                 </div>
             </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 12</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
+            <div class="topico">
+                <h2 class="topico__titulo">FLEX-END</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">flex-wrap: </span>
+                        <span class="topico__codigo__valor">wrap;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-content: </span>
+                        <span class="topico__codigo__valor">flex-end;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">flex-wrap: </span>
-                    <span class="topico__codigo__valor">wrap;</span>
+                <div class="container-output container-output-flex-wrap" id="container-output-13">
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-content: </span>
-                    <span class="topico__codigo__valor">flex-start;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
             </div>
-            <div class="container container-flex-wrap" id="container-12">
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
+            <div class="topico">
+                <h2 class="topico__titulo">CENTER</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">flex-wrap: </span>
+                        <span class="topico__codigo__valor">wrap;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-content: </span>
+                        <span class="topico__codigo__valor">center;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output container-output-flex-wrap" id="container-output-14">
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
+                </div>
             </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 13</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
+            <div class="topico">
+                <h2 class="topico__titulo">STRETCH</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">flex-wrap: </span>
+                        <span class="topico__codigo__valor">wrap;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-content: </span>
+                        <span class="topico__codigo__valor">stretch;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">flex-wrap: </span>
-                    <span class="topico__codigo__valor">wrap;</span>
+                <div class="container-output container-output-flex-wrap" id="container-output-15">
+                    <div class="output-item-estilo output-item-width"></div>
+                    <div class="output-item-estilo output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-width-g"></div>
+                    <div class="output-item-estilo output-item-width"></div>
+                    <div class="output-item-estilo output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-width-g"></div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-content: </span>
-                    <span class="topico__codigo__valor">flex-end;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
             </div>
-            <div class="container container-flex-wrap" id="container-13">
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
+            <div class="topico">
+                <h2 class="topico__titulo">SPACE-BETWEEN</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">flex-wrap: </span>
+                        <span class="topico__codigo__valor">wrap;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-content: </span>
+                        <span class="topico__codigo__valor">space-between;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
+                </div>
+                <div class="container-output container-output-flex-wrap" id="container-output-16">
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
+                </div>
             </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 14</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
+            <div class="topico">
+                <h2 class="topico__titulo">SPACE-AROUND</h2>
+                <div class="topico__codigo">
+                    <div class="topico__codigo__seletor">.container {</div>
+                    <div>
+                        <span class="topico__codigo__atributo">display: </span>
+                        <span class="topico__codigo__valor">flex;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">flex-wrap: </span>
+                        <span class="topico__codigo__valor">wrap;</span>
+                    </div>
+                    <div>
+                        <span class="topico__codigo__atributo">align-content: </span>
+                        <span class="topico__codigo__valor">space-around;</span>
+                    </div>
+                    <div class="topico__codigo__seletor">}</div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">flex-wrap: </span>
-                    <span class="topico__codigo__valor">wrap;</span>
+                <div class="container-output container-output-flex-wrap" id="container-output-17">
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
+                    <div class="output-item-estilo output-item-height output-item-width"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-p"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-m"></div>
+                    <div class="output-item-estilo output-item-height output-item-width-g"></div>
                 </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-content: </span>
-                    <span class="topico__codigo__valor">center;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container container-flex-wrap" id="container-14">
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 15</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">flex-wrap: </span>
-                    <span class="topico__codigo__valor">wrap;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-content: </span>
-                    <span class="topico__codigo__valor">stretch;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="codigo__nota">Não foi definido um height para os itens.</div>
-            <div class="container container-flex-wrap" id="container-15">
-                <div class="container__item-estilo container__item-width"></div>
-                <div class="container__item-estilo container__item-width-p"></div>
-                <div class="container__item-estilo container__item-width-m"></div>
-                <div class="container__item-estilo container__item-width-g"></div>
-                <div class="container__item-estilo container__item-width"></div>
-                <div class="container__item-estilo container__item-width-p"></div>
-                <div class="container__item-estilo container__item-width-m"></div>
-                <div class="container__item-estilo container__item-width-g"></div>
             </div>
         </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 16</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">flex-wrap: </span>
-                    <span class="topico__codigo__valor">wrap;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-content: </span>
-                    <span class="topico__codigo__valor">space-between;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container container-flex-wrap" id="container-16">
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-            </div>
-        </div>
-        <div class="topico">
-            <h2 class="topico__titulo">Tópico 17</h2>
-            <div class="topico__codigo">
-                <div class="topico__codigo__seletor">.container {</div>
-                <div>
-                    <span class="topico__codigo__atributo">display: </span>
-                    <span class="topico__codigo__valor">flex;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">flex-wrap: </span>
-                    <span class="topico__codigo__valor">wrap;</span>
-                </div>
-                <div>
-                    <span class="topico__codigo__atributo">align-content: </span>
-                    <span class="topico__codigo__valor">space-around;</span>
-                </div>
-                <div class="topico__codigo__seletor">}</div>
-            </div>
-            <div class="container container-flex-wrap" id="container-17">
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-                <div class="container__item-estilo container__item-height container__item-width"></div>
-                <div class="container__item-estilo container__item-height container__item-width-p"></div>
-                <div class="container__item-estilo container__item-height container__item-width-m"></div>
-                <div class="container__item-estilo container__item-height container__item-width-g"></div>
-            </div>
-        </div>
-        <footer class="rodape">
-            <p class="rodape__texto">Desenvolvido por <a class="rodape__link" href="">Maira Araujo</a></p>
-            <p class="rodape__texto">Hospedado gratuitamente no <a class="rodape__link" href="">GitHub</a></p>
-        </footer>
-    </body>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por <a class="rodape__link" href="">Maira Araujo</a></p>
+        <p class="rodape__texto">Hospedado gratuitamente no <a class="rodape__link" href="">GitHub</a></p>
+    </footer>
+</body>
 </html>

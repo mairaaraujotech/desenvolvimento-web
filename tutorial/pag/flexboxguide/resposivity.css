@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    .output-item-width {
+        width: 50px;
+    }
+    .output-item-width-p {
+        width: 75px;
+    }
+    .output-item-width-m {
+        width: 100px;
+    }
+    .output-item-width-g {
+        width: 125px;
+    }
+    .output-item-height {
+        height: 50px;
+    }
+    .output-item-height-p {
+        height: 75px;
+    }
+    .output-item-height-m {
+        height: 100px;
+    }
+    .container__item__texto {
+        font-size: 0.6em;
+    }
+}
