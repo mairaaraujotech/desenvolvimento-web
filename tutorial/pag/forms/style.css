@@ -1,0 +1,70 @@
+:root{
+    --cor-01: #CC5803; /*Contraste: Branco*/
+    --cor-02: #E2711D; /*Contraste: Branco*/
+    --cor-03: #FF9505; /*Contraste: Preto*/
+    --cor-03: #FF9505; /*Contraste: Preto*/
+    --cor-10: #FFFFFF; /*Contraste: Preto*/
+    --cor-11: #909090; /*Contraste: Branco*/
+    --cor-12: #000000; /*Contraste: Branco*/
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#cabecalho{
+    margin: 10vh 0;
+}
+#cabecalho-titulo{
+    font-size: 2.5rem;
+    text-align: center;
+}
+#cabecalho-subtitulo{
+    background-color: var(--cor-01);
+    padding: 10px 0;
+}
+#principal{
+    background-color: var(--cor-11);
+}
+.campo{
+    
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#formulario-nome,
+#formulario-email,
+#formulario-mensagem{
+    color: var(--cor-10);
+}
+#nome,
+#email,
+#mensagem{
+    padding: 20px;
+    border: solid 1px var(--cor-11);
+    border-radius: 10px;
+}
+#botao-enviar{
+    border: solid 1px var(--cor-11);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*FLEXBOX*/
+/*#principal{
+    display: flex;
+    justify-content: center;
+}*/
+/*<section class="contato">
+
+    <div class="campo">
+
+    </div>
+
+    <div class="campo">
+      
+    </div>
+
+    
+    
+  </form>
+</section>*/
