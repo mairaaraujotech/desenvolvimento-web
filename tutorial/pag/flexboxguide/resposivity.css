@@ -1,4 +1,7 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    .topico{
+        margin: 20vh;
+    }
     .output-item-width {
         width: 50px;
     }
@@ -24,3 +27,8 @@
         font-size: 0.6em;
     }
 }
+/*@media screen and (min-width: 1024px) {
+    #cabecalho{
+        background-color: blueviolet;
+    }
+}*/
