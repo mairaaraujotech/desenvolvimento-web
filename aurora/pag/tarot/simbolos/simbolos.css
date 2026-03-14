@@ -13,7 +13,7 @@
 }
 
 /* Estilo para remover as bolinhas da lista (opcional) */
-#lista-ordenada {
+#simbolos {
     list-style: none;
     padding: 0;
 }
