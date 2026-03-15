@@ -60,6 +60,7 @@ const dicionarioSimbolos = {
     'Pomo Dourado':'Ação imediata, conquista merecida e a realização de um desejo importante, incentiva a ser rápido e perspicaz.',
     'Escudo':'O símbolo central (Lingam-Yoni) representa a união das energias masculina e feminina; as asas acima indicam inspiração espiritual.',
     'Espada em Riste':'Representa o discernimento e a capacidade de separar a verdade da mentira. Ela aponta para cima, indicando vitória e autoridade espiritual.',
+    'Espada':'Consagração, honra e nobreza.',
     'Balança':'Simboliza a imparcialidade, o equilíbrio entre forças opostas e a pesagem de evidências ou ações (causa e efeito).',
     'Trono entre Pilares':'Representa a estabilidade e a estrutura da lei. Os dois pilares evocam a dualidade e, portanto, necessidade de mediação.',
     'Pano de Fundo (Roxo)':'Simboliza a compaixão e a espiritualidade que devem temperar a severidade do julgamento.',
