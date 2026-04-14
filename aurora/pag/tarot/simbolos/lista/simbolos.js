@@ -35,6 +35,7 @@ const dicionarioSimbolos = {
     'Escudo':'O símbolo central (Lingam-Yoni) representa a união das energias masculina e feminina; as asas acima indicam inspiração espiritual.',
     'Espada':'Consagração, honra e nobreza. O intelecto e a mente consciente como ferramentas de criação ou destruição. Execução de um pensamento.',
     'Balança':'Imparcialidade, a equidade, o julgamento e o equilíbrio.',
+    'Bandeira Cristã':'A cruz vermelha em fundo branco simboliza a vitória do espírito sobre a morte e o despertar da consciência.',
     'Lamparina':'Representa a luz da inteligência e a busca pela verdade. Diferente do Sol, é uma luz contida que ilumina apenas o próximo passo.',
     'Cajado':'O apoio na jornada e a vontade direcionada. É a ferramenta do peregrino que se sustenta na própria fé.',
     'Roda':'Representa o ciclo eterno de nascimento, morte e renascimento; o movimento constante do destino e do tempo.',
