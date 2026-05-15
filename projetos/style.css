@@ -96,7 +96,7 @@
     margin: 30px 50px;
 }
 /*Botão Voltar*/
-.container-botao-voltar{
+.container-botao-contato{
     text-align: center;
     margin: 10vh 0;
 }
@@ -132,7 +132,7 @@
     color: var(--cor-01);
     text-transform: uppercase;
 }
-.botao-voltar{ 
+.botao-contato{ 
     font-family: var(--fonte-01);
     font-weight: bold;
     font-size: 1rem;
@@ -141,7 +141,7 @@
     background-color: var(--cor-01);
     padding: 10px;
     border: solid 2px var(--cor-01);
-    border-radius: 50%;
+    border-radius: 45%;
 }
 .rodape-desenvolvedor-link,
 .rodape-hospedagem-link {
