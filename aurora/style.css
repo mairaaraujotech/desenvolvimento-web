@@ -71,7 +71,6 @@
 .arcano-texto{
     text-indent: 30px;
     text-align: justify;
-
 }
 .arcano-texto>p{
     font-family: var(--fonte-01);
@@ -83,6 +82,9 @@
     color: var(--cor-02);
     font-weight: 900;
     text-transform: uppercase;
+}
+.texto-destaque-menor{
+    text-decoration: underline;
 }
 /*Botão Voltar*/
 .container-botao-voltar{

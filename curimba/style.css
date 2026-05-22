@@ -5,12 +5,11 @@
 
 :root {
     /*CORES*/
-    --cor-01: #F37748;
-    --cor-02: #628B48;
-    --cor-03: #A41623;
-    --cor-04: #000000;
-    --cor-05: #909090;
-    --cor-06: #FFFFFF;
+    --cor-01: #445532;
+    --cor-02: #692B1F;
+    --cor-03: #000000;
+    --cor-04: #272424;
+    --cor-05: #FFFFFF;
     /*FONTES*/
     --fonte-01: 'Courier New';
     --fonte-02: 'Arial';
@@ -31,7 +30,7 @@
     font-size: 4rem;
     text-transform: uppercase;
     background-color: var(--cor-01);
-    color: var(--cor-06);
+    color: var(--cor-05);
     padding: 10px;
 }
 #container-imagem{
@@ -52,7 +51,7 @@
     margin: 0 50px;
 }
 .lista-item{
-    background-color: var(--cor-01);
+    background-color: var(--cor-02);
     border-radius: 10px;
     padding: 10px 0;
     margin-bottom: 10px;
@@ -68,8 +67,8 @@
     font-size: 0.8rem;
     text-align: center;
     line-height: 1.5rem;
-    color: var(--cor-06);
-    background-color: var(--cor-05);
+    color: var(--cor-05);
+    background-color: var(--cor-04);
     padding: var(--medida-02);
 }
 /*LETRAS DOS PONTOS*/
@@ -88,34 +87,34 @@
 /*LINKS*/
 .item-link{
     font-family: var(--fonte-02);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--cor-06);
+    text-transform: uppercase;
+    color: var(--cor-05);
     padding: 10px 0;
 }
 #botao-voltar{
     font-family: var(--fonte-02);
-    font-size: 2rem;
     line-height: 2.5rem;
     text-decoration: none;
-    background-color: var(--cor-03);
-    color: var(--cor-06);
+    background-color: var(--cor-01);
+    color: var(--cor-05);
     padding:10px;
     border: solid 0px var(--cor-01);
     border-radius: 50%;
 }
 .rodape__link{
-    color: var(--cor-06);
+    color: var(--cor-05);
     text-decoration: none;
 }
 /*HOVERS*/
 .lista-item:hover{
-    background-color: var(--cor-02);
+    background-color: var(--cor-01);
 }
 #botao-voltar:hover{
     background-color: var(--cor-02);
-    border: solid 0px var(--cor-01);
+    border: solid 0px var(--cor-02);
 }
 .rodape__link:hover{
     text-decoration: underline;
