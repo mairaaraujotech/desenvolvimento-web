@@ -1,0 +1,117 @@
+/* CSS RESET */
+body, img, h1, p, fieldset, legend, label, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DA PAGINA */
+body{
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: "Work Sans", sans-serif;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 95px;
+}
+
+h1{
+    font-family: "Fjalla One", sans-serif;
+}
+
+/* ESTILO DO FORMULARIO */
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+fieldset{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+legend{
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+p{
+    margin-bottom: 15px
+}
+
+input, select, textarea{
+    width: 100%;
+    padding:10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input[type="radio"], 
+input[type="checkbox"]{
+    width: auto;
+}
+
+input[type="color"]{
+    width: 40px;
+    padding: 0px 5px;
+}
+
+label{
+    margin-bottom: 5px;
+    display: inline-block
+}
+
+input[type="tel"], 
+input[type="file"]{
+    margin-bottom: 0;
+}
+
+small{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+input:focus{
+    border-color: cornflowerblue;
+    outline: none;
+}
+
+input:valid{
+    border-color: green;
+}
+input:invalid{
+    border-color: red;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;    
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #fff;
+}
+button[type="reset"]:hover{
+    background-color: orangered;
+    color: #fff;
+}

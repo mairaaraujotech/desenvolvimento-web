@@ -1,0 +1,22 @@
+body{
+	background: linear-gradient(180deg, rgba(0,47,82,1) 0%, rgba(50,101,137,1) 100%);
+	background-repeat:no-repeat;
+	font-family:"Poppins";
+}
+
+.topicos-visitados {
+	padding:20px;
+}
+
+h2{
+	font-size:24px;
+	font-weight:300;
+	color:#FFFFFF;
+}
+
+.topicos span{
+	background-color:#EB9B00;
+	padding:8px;
+	color: #FFFFFF;
+	text-align:center;
+}

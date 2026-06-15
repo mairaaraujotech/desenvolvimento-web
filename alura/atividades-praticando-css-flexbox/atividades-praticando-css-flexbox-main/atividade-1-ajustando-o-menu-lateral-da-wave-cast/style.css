@@ -1,0 +1,21 @@
+.menu {
+	width:200px;
+	background-color: #01080E;
+	padding: 20px;
+}
+
+.menu img{
+	width:144px;
+	margin-bottom:20px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	font-family:"Open Sans";
+	font-size:16px;
+}
+
+.menu a:hover{
+	color:#2BDEFD;
+}

@@ -1,0 +1,14 @@
+body {
+	font-family: "Inter";
+	background-color: #E4EDE3;
+}
+
+.card {
+	background: #47A138;
+	color:#FFFFFF;
+	font-weight:600;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

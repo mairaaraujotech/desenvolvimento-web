@@ -1,0 +1,18 @@
+.depoimentos { 
+	padding: 20px;
+	font-family:"Roboto";
+} 
+
+.card { 
+	background-color: #FEF4F9;
+	padding: 0 15px 15px;
+	width:250px;
+} 
+
+.card img{
+	margin-top:15px;
+}
+
+.mensagem span{
+	font-weight:500;
+}

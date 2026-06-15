@@ -1,0 +1,38 @@
+body{
+	background: linear-gradient(180deg, rgba(139,31,248,1) 0%, rgba(4,24,50,1) 51%, rgba(1,8,14,1) 100%);
+	background-repeat:no-repeat
+}
+
+section{
+	font-family: "Montserrat";
+	padding:24px;
+}
+
+h2{
+	color:#FFFFFF;
+}
+
+.tarefa{
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius:8px;
+	padding:8px;
+}
+
+.tres-pontos, .editar, .check{
+	border-radius:50%;
+	padding:4px;
+}
+
+.tres-pontos{
+	border:1px solid #B872FF;
+	color:#B872FF;
+}
+
+.editar{
+	border:1px solid #000000;
+	color:#000000;
+}
+
+.check{
+	background-color:#FFFFFF;
+}

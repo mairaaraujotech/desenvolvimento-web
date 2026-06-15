@@ -17,7 +17,7 @@
     --fonte-02: 'Arial';
 }
 /*Corpo da Página*/
-.corpo{
+#corpo{
     background-color: var(--cor-07);
 }
 /*Cabeçalho*/
@@ -45,7 +45,7 @@
 /*Listas de Páginas*/
 .container-lista{
     font-size: 1rem;
-    margin-top: 10vh;;
+    margin-top: 10vh;
 }
 .lista-item{
     font-family: var(--fonte-01);
@@ -58,7 +58,7 @@
 }
 /*Arcanos*/
 .container-arcano{
-    margin: 30px;
+    margin: 5%;
 }
 .arcano-titulo{
     font-family: var(--fonte-01);
@@ -74,8 +74,9 @@
 }
 .arcano-texto>p{
     font-family: var(--fonte-01);
+    font-size: 1rem;
     text-indent: 30px;
-    margin: 10px;
+    margin: 1rem;
 }
 .texto-destaque{
     font-family: var(--fonte-01);
@@ -154,4 +155,15 @@
 .rodape-hospedagem-link:hover{
     color: var(--cor-07);
     text-decoration: underline;
+}
+
+/*Responsividade*/
+
+@media (min-width: 768px) {
+    .lista-item {
+        margin: 1% 30%;
+    }
+    .container-arcano{
+        margin: 0 25%;
+    }
 }

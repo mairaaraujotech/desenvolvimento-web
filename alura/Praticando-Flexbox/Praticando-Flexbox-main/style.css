@@ -1,0 +1,22 @@
+.container{
+	width:70vw;
+	height:70vh;
+	background-color:#021017;
+}
+
+.itens{
+	width:100px;
+	height:100px;
+}
+
+.azul{
+	background-color:#6bd1ff;
+}
+
+.amarelo{
+	background-color:#ffba05;
+}
+
+.vermelho{
+	background-color:#f16165;
+}

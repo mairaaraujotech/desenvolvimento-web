@@ -1,0 +1,18 @@
+body{
+	font-family:"Inter";
+	font-weight:500;
+}
+
+img{
+	display:block;
+}
+
+.titulo-categoria{
+	width:160px;
+	height:35px;
+	background-color:#000000;
+}
+
+.titulo-categoria span{
+	color:white;
+}
