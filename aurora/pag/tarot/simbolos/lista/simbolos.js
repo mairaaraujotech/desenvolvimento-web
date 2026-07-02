@@ -88,7 +88,7 @@ const dicionarioSimbolos = {
     'Dragão':'Os medos subconscientes e as forças instintivas.',
     'Pessoa Coberta de Branco':'A busca por iluminação espiritual ou a necessidade de uma verdade revelada, divindades ou seres espirituais.',
     'Frutas':'A colheita, a fertilidade e a abundância.',
-    'Ilha':'Obstáculos que precisam ser navegados com clareza.',
+    'Ilha':'Obstáculos que precisam ser navegados com clareza. Lugares que só são acessados se você estiver disposto a navegar por seus sentimentos. Fala sobre o processo de autoconhecimento, de coisas que não são acessadas facilmente, de isolamento, coisas bem guardadas, sentir-se cercado, o processo de individuação.',
     'Mulher':'O conhecimento oculto e a intuição passiva. A natureza fértil, a abundância sensorial e a capacidade de nutrir e manifestar a vida na matéria. O domínio dos instintos através da suavidade e da inteligência emocional. A vitória do espírito sobre a matéria.',
     'Navio':'O comércio, as trocas, a jornada da vida, oportunidades em movimento, a habilidade de navegar e procurar orientação.',
     'Pedras':'Um caminho desafiador mas que leva à possibilidade de uma realidade melhor.',
