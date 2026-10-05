@@ -4,57 +4,63 @@
 }
 
 :root{
-    --cor-01: #7F5039; 
-    --cor-02: #B67343;
-    --cor-03: #E08D4B;
-    --cor-04: #000000;
-    --cor-05: #909090;
-    --cor-06: #FFFFFF;
+    --cor-01: #9D9171; 
+    --cor-02: #B07156;
+    --cor-03: #C4A287;
+    --cor-04: #090A0B;
+    --cor-05: #343C42;
+    --cor-06: #FDFCFB;
     --fonte-01: "Courier New";
     --fonte-02: "Arial";
 }
+#corpo{
+    background-color: var(--cor-06);
+}
 #cabecalho{
     font-family: var(--fonte-01);
-    color: var(--cor-04);
+    letter-spacing: 0.3rem;
     text-align: center;
-    margin: 20vh 0;
+    color: var(--cor-06);
+    background-color: var(--cor-03);
+    padding: 20vh 0;
 }
 #cabecalho-titulo{
-    background-color: var(--cor-06);
-    font-size: 1.5rem;
-    font-weight: bolder;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 #cabecalho-subtitulo{
     background-color: var(--cor-03);
     font-size: 1.5rem;
+    padding: 0.5rem 0;
 }
 #principal{
     font-family: var(--fonte-02);
     font-size: 1rem;
-    text-align: justify;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
     color: var(--cor-04);
     background-color: var(--cor-06);
-    margin: 0 5vh 5vh;
+}
+.container-texto{
+    margin: 0 5vw;
 }
 .container-texto p{
     line-height: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5vh;
 }
-#container-lista{
+#container-navegacao{
     text-align: center;
-    margin: 50px 40px 0 40px;
+    margin: 0 10vw;
 }
-.lista-item{
+.navegacao-item{
     font-size: 0.8rem;
-    text-transform: uppercase;
     background-color: var(--cor-01);
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0;
 }
 #container-botao-voltar{
-    margin: 50px 0;
     text-align: center;
 }
 #rodape{
@@ -63,10 +69,13 @@
     font-family: var(--fonte-02);
     font-size: 0.8rem;
     text-align: center;
-    padding: 5vh;
+    padding: 20vh 0;
 }
 /*LINKS*/
-.item-link{
+.navegacao-link{
+    letter-spacing: 0.15rem;
+    font-family: var(--fonte-01);
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--cor-06);
     padding: 10px;
@@ -84,7 +93,7 @@
     text-decoration: none;
 }
 /*HOVERS*/
-.lista-item:hover{
+.navegacao-item:hover{
     background-color: var(--cor-02);
 }
 #botao-voltar:hover{
@@ -93,4 +102,12 @@
 #desenvolvedor-link:hover,
 #github-link:hover{
     text-decoration: underline;
+}
+
+/*margin-top*/
+#principal,
+#container-navegacao,
+#container-botao-voltar,
+#rodape{
+    margin-top: 20vh;
 }
